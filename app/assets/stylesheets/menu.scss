@@ -1,0 +1,44 @@
+.menu-bar{
+  display: flex;
+  height: 75px;
+  border-bottom: 1px solid #eee;
+}
+.menu-item{
+  &s-container{
+    display: flex;
+  }
+  &-icon{
+    padding: 0 15px;
+  }
+
+}
+.menubutton {
+  display: none;
+}
+.logo-container{
+  flex: 0 0 20%;
+}
+.menu-item-right{
+  flex: 0 0 30%;
+}
+.menu-item{
+  width: 20%;
+  min-width: 100px;
+  text-transform: uppercase;
+  font-family: 'Roboto',sans-serif;
+  color:#000;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.active{
+  color: #00a0f0;
+}
+.phone-container{
+  padding-right: 20px;
+  border-right: 1px dashed #ccc;
+}
+.logo-image{
+  position: absolute;
+  top: 0;
+}
