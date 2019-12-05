@@ -1,0 +1,41 @@
+
+<% provide(:title, 'Booking') %>
+
+
+
+<div class="container" style="padding:100px;">
+  <h1>Booking Requets</h1>
+
+
+
+  <%= form_for(@booking) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+
+      <div class="form-group">
+        <%= f.text_field :first_name, class: 'form-control form-control-user', id: "exampleFirstName", placeholder: "First Name" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.text_field :second_name, class: 'form-control form-control-user', id: "exampleLastName", placeholder: "Last Name" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.email_field :email, class: "form-control form-control-user", id: "exampleInputEmail", placeholder: "Email Address" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.number_field :phone, class: "form-control form-control-user", id: "exampleInputPhone", placeholder: "Phone Number" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.text_field :indication, class: "form-control form-control-user", id: "exampleInputIndication", placeholder: "Indication" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.text_field :message, class: "form-control form-control-user", id: "exampleInputMessage", placeholder: "Message" %>
+      </div>
+
+      <%= f.submit "Save Changes", class: "btn btn-primary btn-user btn-block" %>
+  <% end %>
+
+</div>
