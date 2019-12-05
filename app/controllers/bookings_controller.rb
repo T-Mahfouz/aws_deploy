@@ -7,9 +7,9 @@ class BookingsController < ApplicationController
   @booking = Booking.new(booking_params)
   if @booking.save
    flash[:success] = "Booking created"
-    render 'new'
+    render 'mains/contact'
   else
-    render 'new'
+    render 'mains/contact'
   end
   end
 

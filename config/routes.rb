@@ -6,5 +6,8 @@ Rails.application.routes.draw do
 
   resources :bookings
 
+  get 'aboutus', to: "mains#aboutus"
+  get 'contact', to: "mains#contact"
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
