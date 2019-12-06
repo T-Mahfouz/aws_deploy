@@ -11,6 +11,8 @@
 .menu-item{
   &s-container{
     display: flex;
+    max-width: 1440px;
+    margin: auto;
   }
   &-icon{
     padding: 0 15px;
@@ -64,4 +66,7 @@
   position: absolute;
   top: 0px;
   left: 70px;
+  @media only screen and (min-width:1440px) {
+  left: initial;
+  }
 }
