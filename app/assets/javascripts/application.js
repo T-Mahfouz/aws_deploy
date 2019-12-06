@@ -2,6 +2,5 @@
 //= require jquery_ujs
 //= require popper
 //= require bootstrap
-//= require_tree .
-
-
+//= require intlTelInput
+//= require libphonenumber/utils

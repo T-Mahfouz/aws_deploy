@@ -20,6 +20,17 @@
     <%= yield %>
     <%= render partial: 'shared/footer'%>
   </div>
-
+  <script>
+      var iti = $("#phone").intlTelInput({
+        formatOnInit: true,
+        separateDialCode: true,
+        nationalMode: true,
+        utilsScript: 'assets/libphonenumber/utils'
+      });
+       $("#new_booking").on('submit', function(){
+         var phone_number = $("#phone").intlTelInput("getNumber")
+         $("#phone")[0].value = phone_number
+      });
+  </script>
   </body>
 </html>

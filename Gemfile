@@ -22,8 +22,9 @@ gem 'jbuilder', '~> 2.7'
 gem 'activeadmin'
 gem 'devise'
 gem 'bootstrap', '~> 4.4.1'
-
 gem 'rails-ujs'
+gem 'intl-tel-input-rails'
+
 
 
 # Use Redis adapter to run Action Cable in production
