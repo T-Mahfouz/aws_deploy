@@ -135,13 +135,14 @@
 }
 .quality{
   &-background-container{
-    background-image: url("https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/back-large.jpg");
+    background-image: image_url("Slider3/shutterstock_1356835016.jpg");
     //height: 100vh;
     background-position: top;
     display: flex;
   }
   &-left-side{
     flex: 0 0 65%;
+    background-color: rgba(255,255,255,.5);
   }
   &-left-side{
     padding: 50px 100px;
