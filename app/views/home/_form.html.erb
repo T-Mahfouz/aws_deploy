@@ -6,6 +6,7 @@
     <div class="appointment-form-heading">
       Book Appointment
     </div>
+    <div id="helpBlock" class="help-block"></div>
     <%= form_for(@booking, :html => {:remote => true}) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
       <div class="appointment-form-row">
