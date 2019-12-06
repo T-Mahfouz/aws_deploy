@@ -1,0 +1,16 @@
+.image{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.slick-prev{
+    z-index: 999;
+    transform: scale(1.5);
+    left: 30;
+}
+
+.slick-next {
+    z-index: 999;
+    right: 30;
+    transform: scale(1.5);
+}
