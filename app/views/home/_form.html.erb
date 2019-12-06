@@ -1,0 +1,41 @@
+<div class="reviews-left-side reviews-sides">
+  <div class="reviews-right-form-container">
+    <div class="appointment-form-top-text">
+      Always there to care.
+    </div>
+    <div class="appointment-form-heading">
+      Book Appointment
+    </div>
+    <%= form_for(@booking, :html => {:remote => true}) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+      <div class="appointment-form-row">
+        <div class="appointment-form-row-left">
+          <%= f.text_field :first_name, class: 'home-form-input', placeholder: 'First name' %>
+        </div>
+        <div class="appointment-form-row-right">
+          <%= f.text_field :second_name, class: 'home-form-input', placeholder: "Last Name" %>
+        </div>
+      </div>
+      <div class="appointment-form-row">
+        <div class="appointment-form-row-left">
+          <%= f.text_field :email, class: 'home-form-input', placeholder: "Email" %>
+        </div>
+        <div class="appointment-form-row-right">
+          <%= f.number_field :phone, class: 'home-form-input', placeholder: "Phone" %>
+          <%#= f.telephone_field :phone, id: 'phone', class: 'home-form-input', placeholder: "Phone" %>
+        </div>
+      </div>
+      <div class="appointment-form-row">
+        <%= f.text_field :disease_type, class: "home-form-input", placeholder: "Disease type" %>
+      </div>
+      <div class="appointment-form-row">
+        <div class="appointment-form-row-text-area">
+          <%= f.text_area :inquiry, class: "home-form-input home-form-textarea", placeholder: "Special request..." %>
+        </div>
+      </div>
+      <div class="appointment-form-button">
+        <%= f.submit 'Save Changes', class: 'btns btns-submit' %>
+      </div>
+    <% end %>
+  </div>
+</div>

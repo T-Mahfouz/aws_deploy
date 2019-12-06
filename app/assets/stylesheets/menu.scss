@@ -2,6 +2,11 @@
   display: flex;
   height: 75px;
   border-bottom: 1px solid #eee;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #Fff;
+  z-index: 99;
 }
 .menu-item{
   &s-container{
@@ -30,6 +35,12 @@
   font-size: 16px;
   font-weight: 600;
   text-align: center;
+  &:hover{
+    color: #00a0f0;
+  }
+}
+.menu-items a:hover{
+  text-decoration: none;
 }
 .active{
   color: #00a0f0;
@@ -40,5 +51,5 @@
 }
 .logo-image{
   position: absolute;
-  top: 0;
+  top: 0px;
 }

@@ -1,0 +1,27 @@
+.slider{
+  &-back-image-container{
+      background-image: url("https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/title-area-1.jpg");
+    height: 450px;
+    margin-bottom: 75px;
+  }
+  &-text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+  }
+  &-heading{
+    color: #fff;
+    line-height: 87px;
+    font-size: 75px;
+  }
+  &-text{
+    font-size: 18px;
+    font-family: "Roboto";
+    line-height: 34px;
+    font-weight: 400;
+    font-style: normal;
+  }
+}

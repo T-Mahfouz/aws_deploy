@@ -10,4 +10,20 @@ $(document).ready(function ()  {
             }
         });
     });
+    $(window).scroll(function () {
+
+        var height = $(window).scrollTop();
+
+        if(height > document.body.clientHeight){
+            $('.move-up').css('display','flex')
+        }
+        else{
+            $('.move-up').css('display','none')
+        }
+    });
+    $('.move-up').click(function () {
+        $("html, body").animate({scrollTop: 0}, 400);
+    })
+
+
 });

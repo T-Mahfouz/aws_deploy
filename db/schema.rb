@@ -53,4 +53,11 @@ ActiveRecord::Schema.define(version: 2019_12_06_114434) do
     t.index ["email"], name: "index_bookings_on_email", unique: true
   end
 
+  create_table "complains", force: :cascade do |t|
+    t.string "comment"
+    t.integer "complain_number"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
 end
