@@ -10,10 +10,25 @@ $(document).ready(function ()  {
             }
         });
     });
-    console.log("Error")
     $("#slideshow").slick({
         infinite: true,
-        dots: true,
+        autoplaySpeed: 2000,
+        autoplay: true,
     });
+    $(window).scroll(function () {
+
+        var height = $(window).scrollTop();
+
+        if(height > document.body.clientHeight){
+            $('.move-up').css('display','flex')
+        }
+        else{
+            $('.move-up').css('display','none')
+        }
+    });
+    $('.move-up').click(function () {
+        $("html, body").animate({scrollTop: 0}, 400);
+    })
+
 
 });
