@@ -4,13 +4,14 @@ class BookingsController < ApplicationController
   end
 
   def create
-  @booking = Booking.new(booking_params)
-  if @booking.save
-   flash[:success] = "Booking created"
-    render 'mains/contact'
-  else
-    render 'mains/contact'
-  end
+    @booking = Booking.new(booking_params)
+    if @booking.save
+    flash[:success] = "Booking created"
+    else
+      respond_to do |format|
+        format.js
+      end
+    end
   end
 
   def show
