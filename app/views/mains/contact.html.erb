@@ -46,19 +46,19 @@
       </div>
 
       <div class="form-group">
-        <%= f.label :indication, "Disease type", style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
+        <%= f.label :disease_type, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
       </div>
 
       <div class="form-group">
-        <%= f.text_field :indication, class: "form-control form-control-user", id: "exampleInputIndication", placeholder: "Disease type" %>
+        <%= f.text_field :disease_type, class: "form-control form-control-user", id: "exampleInputIndication", placeholder: "Disease type" %>
       </div>
 
       <div class="form-group">
-        <%= f.label :message, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
+        <%= f.label :inquiry, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
       </div>
 
       <div class="form-group">
-        <%= f.text_area :message, class: "form-control form-control-user",rows: "5", cols: "10",placeholder: "Inquiry", style: "resize:none;" %>
+        <%= f.text_area :inquiry, class: "form-control form-control-user",rows: "5", cols: "10",placeholder: "Inquiry", style: "resize:none;" %>
       </div>
 
       <%= f.submit "Save Changes", class: "btn btn-primary btn-user btn-block", id: "submit-button" %>
