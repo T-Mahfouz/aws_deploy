@@ -2,7 +2,7 @@ $(document).on('ready',function () {
     $("#submit-button").on('click',function(){
         $.ajax({
             type: "POST",
-            url : "mains/contact",
+            url : "home/contact",
             data : $(".new_booking").serialize(),
             success: function(){
                 alert("submitted");
