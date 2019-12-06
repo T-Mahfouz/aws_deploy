@@ -22,11 +22,13 @@
         </div>
         <div class="appointment-form-row-right">
           <%# <%= f.number_field :phone, class: 'home-form-input', placeholder: "Phone" %>
-          <%= f.telephone_field :phone, id: 'phone', class: 'home-form-input', placeholder: "Phone" %>
+          <%= f.text_field :disease_type, class: "home-form-input", placeholder: "Disease type" %>
+
         </div>
       </div>
-      <div class="appointment-form-row">
-        <%= f.text_field :disease_type, class: "home-form-input", placeholder: "Disease type" %>
+      <div class="appointment-form-row appointment-form-phone">
+        <%= f.telephone_field :phone, id: 'phone', class: 'home-form-input', placeholder: "Phone" %>
+
       </div>
       <div class="appointment-form-row">
         <div class="appointment-form-row-text-area">

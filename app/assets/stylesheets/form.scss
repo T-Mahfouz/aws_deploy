@@ -1,4 +1,11 @@
 .appointment-form{
+  &-phone {
+    margin-bottom: 15px;
+  }
+  &-phone > div:first-child{
+    width: 100%;
+  }
+
   &-top-text{
     font-size: 18px;
     font-weight: 400;
@@ -78,4 +85,7 @@
     background-color: #00a0f0;
     border: 1px solid #00a0f0;
   }
+}
+.iti-arrow{
+  display: none;
 }

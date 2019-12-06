@@ -1,61 +1,141 @@
 <% provide(:title, 'Booking') %>
+<section class="reviews-container">
+  <div class="reviews-inner-container">
 
-<div class="container" style="padding:100px;">
+    <%= render partial: 'form' %>
 
-  <h1 id="headings">Booking Requets</h1>
-  <hr>
-  <span id="helpBlock" class="help-block"></span>
-  <%= form_for(@booking, :html=>{:remote=>true}) do |f| %>
-      <%= render 'shared/error_messages', object: f.object %>
+    <div class="reviews-right-side reviews-sides">
 
-      <div class="form-group">
-       <%= f.label :first_name, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
+      <div class="reviews-review-container mt-0">
+
+        <div class="reviews-review-right">
+          <div class="reviews-heading-black heading-lg">
+           New York Department
+          </div>
+          <div class="reviews-review-right-top gray-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam commodi consequatur deleniti distinctio, enim, eveniet perferendis porro quasi quo
+            reprehenderit repudiandae sed sequi unde voluptatibus.
+          </div>
+          <div class="contact-page-bottom d-flex justify-content-between">
+          <div class="reviews-review-right-bottom align-items-center">
+           <i class="fa fa-mobile-phone active fa-4x"></i>
+            <div class="ml-4">
+              <div class="reviews-review-reviewer-name heading-md">
+                + 0800 2466 7921
+              </div>
+              <div class="gray-text">
+                Office@Medigroup.com
+              </div>
+            </div>
+          </div>
+            <div class="reviews-review-right-bottom align-items-center">
+              <i class="fa fa-map-marker active fa-4x"></i>
+              <div class="ml-4">
+                <div class="reviews-review-reviewer-name heading-md">
+                  + 0800 2466 7921
+                </div>
+                <div class="gray-text">
+                  Office@Medigroup.com
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      <div class="form-group">
-        <%= f.text_field :first_name, class: 'form-control form-control-user', id: "exampleFirstName", placeholder: "First Name" %>
       </div>
-
-      <div class="form-group">
-        <%= f.label :second_name, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
+      <div class="reviews-review-right mt-5">
+        <div class="reviews-heading-black heading-lg">
+          Boston Department
+        </div>
+        <div class="reviews-review-right-top gray-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Aliquam commodi consequatur deleniti distinctio, enim, eveniet perferendis porro quasi quo
+          reprehenderit repudiandae sed sequi unde voluptatibus.
+        </div>
+        <div class="contact-page-bottom d-flex justify-content-between">
+          <div class="reviews-review-right-bottom align-items-center">
+            <i class="fa fa-mobile-phone active fa-4x"></i>
+            <div class="ml-4">
+              <div class="reviews-review-reviewer-name heading-md">
+                + 0800 2466 7921
+              </div>
+              <div class="gray-text">
+                Office@Medigroup.com
+              </div>
+            </div>
+          </div>
+          <div class="reviews-review-right-bottom align-items-center">
+            <i class="fa fa-map-marker active fa-4x"></i>
+            <div class="ml-4">
+              <div class="reviews-review-reviewer-name heading-md">
+                + 0800 2466 7921
+              </div>
+              <div class="gray-text">
+                Office@Medigroup.com
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+</section>
+<!--<div class="container" style="padding:100px;">-->
 
-      <div class="form-group">
-        <%= f.text_field :second_name, class: 'form-control form-control-user', id: "exampleLastName", placeholder: "Last Name" %>
-      </div>
+<!--  <h1 id="headings">Booking Requets</h1>-->
+<!--  <hr>-->
+<!--  <span id="helpBlock" class="help-block"></span>-->
+  <%#= form_for(@booking, :html=>{:remote=>true}) do |f| %>
+      <%#= render 'shared/error_messages', object: f.object %>
 
-      <div class="form-group">
-        <%= f.label :email, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
-      </div>
+<!--      <div class="form-group">-->
+       <%#= f.label :first_name, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
+<!--        </div>-->
+<!--      <div class="form-group">-->
+        <%#= f.text_field :first_name, class: 'form-control form-control-user', id: "exampleFirstName", placeholder: "First Name" %>
+<!--      </div>-->
 
-      <div class="form-group">
-        <%= f.email_field :email, class: "form-control form-control-user", id: "exampleInputEmail", placeholder: "Email Address" %>
-      </div>
+<!--      <div class="form-group">-->
+        <%#= f.label :second_name, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
+<!--      </div>-->
 
-      <div class="form-group">
-        <%= f.label :phone, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
-      </div>
+<!--      <div class="form-group">-->
+        <%#= f.text_field :second_name, class: 'form-control form-control-user', id: "exampleLastName", placeholder: "Last Name" %>
+<!--      </div>-->
 
-      <div class="form-group">
-        <%= f.telephone_field :phone, id: "phone", class: "form-control form-control-user"%>
+<!--      <div class="form-group">-->
+        <%#= f.label :email, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
+<!--      </div>-->
 
-      </div>
+<!--      <div class="form-group">-->
+        <%#= f.email_field :email, class: "form-control form-control-user", id: "exampleInputEmail", placeholder: "Email Address" %>
+<!--      </div>-->
 
-      <div class="form-group">
-        <%= f.label :disease_type, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
-      </div>
+<!--      <div class="form-group">-->
+        <%#= f.label :phone, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
+<!--      </div>-->
 
-      <div class="form-group">
-        <%= f.text_field :disease_type, class: "form-control form-control-user", id: "exampleInputIndication", placeholder: "Disease type" %>
-      </div>
+<!--      <div class="form-group">-->
+        <%#= f.telephone_field :phone, id: "phone", class: "form-control form-control-user"%>
 
-      <div class="form-group">
-        <%= f.label :inquiry, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
-      </div>
+<!--      </div>-->
 
-      <div class="form-group">
-        <%= f.text_area :inquiry, class: "form-control form-control-user",rows: "5", cols: "10",placeholder: "Inquiry", style: "resize:none;" %>
-      </div>
+<!--      <div class="form-group">-->
+        <%#= f.label :disease_type, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
+<!--      </div>-->
 
-      <%= f.submit "Save Changes", class: "btn btn-primary btn-user btn-block", id: "submit-button" %>
-  <% end %>
-</div>
+<!--      <div class="form-group">-->
+        <%#= f.text_field :disease_type, class: "form-control form-control-user", id: "exampleInputIndication", placeholder: "Disease type" %>
+<!--      </div>-->
+
+<!--      <div class="form-group">-->
+        <%#= f.label :inquiry, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
+<!--      </div>-->
+
+<!--      <div class="form-group">-->
+        <%#= f.text_area :inquiry, class: "form-control form-control-user",rows: "5", cols: "10",placeholder: "Inquiry", style: "resize:none;" %>
+<!--      </div>-->
+
+      <%#= f.submit "Save Changes", class: "btn btn-primary btn-user btn-block", id: "submit-button" %>
+  <%# end %>
+<!--</div>-->

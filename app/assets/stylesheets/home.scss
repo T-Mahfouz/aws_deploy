@@ -10,7 +10,7 @@
     display: flex;
     background-color: #fff;
     box-shadow: 0 0 35px 5px #dceff8;
-    width: 80%;
+    width: 85%;
     margin: auto;
     transform: translateY(-40%);
   }
@@ -58,10 +58,12 @@
 .services-section,
 .cards-section{
   background-color: #FAFAFA;
+}
+.cards-section{
   padding-bottom: 50px;
 }
 .cards-container{
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 .health{
@@ -139,10 +141,12 @@
     //height: 100vh;
     background-position: top;
     display: flex;
+    background-size: cover;
+    background-position-x: left;
   }
   &-left-side{
     flex: 0 0 65%;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.7);
   }
   &-left-side{
     padding: 50px 100px;
