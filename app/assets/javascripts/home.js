@@ -10,11 +10,7 @@ $(document).ready(function ()  {
             }
         });
     });
-    $("#slideshow").slick({
-        infinite: true,
-        autoplaySpeed: 2000,
-        autoplay: true,
-    });
+
     $(window).scroll(function () {
 
         var height = $(window).scrollTop();

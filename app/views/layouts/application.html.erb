@@ -26,6 +26,11 @@
         separateDialCode: true,
         nationalMode: true,
       });
+      $("#slideshow").slick({
+          infinite: true,
+          autoplaySpeed: 2000,
+          autoplay: true,
+      });
       
        $("#new_booking").on('submit', function(){
          var phone_number = $("#phone").intlTelInput("getNumber")
