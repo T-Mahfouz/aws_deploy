@@ -24,7 +24,8 @@ gem 'devise'
 gem 'bootstrap', '~> 4.4.1'
 gem 'rails-ujs'
 gem 'intl-tel-input-rails'
-
+gem 'jquery-rails'
+gem "jquery-slick-rails"
 
 
 # Use Redis adapter to run Action Cable in production

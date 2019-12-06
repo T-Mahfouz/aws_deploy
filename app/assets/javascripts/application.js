@@ -4,3 +4,5 @@
 //= require bootstrap
 //= require intlTelInput
 //= require libphonenumber/utils
+//= require jquery.slick
+//= require home

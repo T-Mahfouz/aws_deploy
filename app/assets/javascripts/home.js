@@ -10,4 +10,10 @@ $(document).ready(function ()  {
             }
         });
     });
+    console.log("Error")
+    $("#slideshow").slick({
+        infinite: true,
+        dots: true,
+    });
+
 });
