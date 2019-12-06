@@ -32,6 +32,7 @@
 /public/packs-test
 /node_modules
 /yarn-error.log
+/config/database.yml
 yarn-debug.log*
 .yarn-integrity
 #.idea file

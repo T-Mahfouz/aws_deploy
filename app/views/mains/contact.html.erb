@@ -4,15 +4,25 @@
 
 
 <div class="container" style="padding:100px;">
-  <h1>Booking Requets</h1>
+
+  <h1 id="headings">Booking Requets</h1>
+  <hr>
+  <span id="helpBlock" class="help-block"></span>
 
 
 
-  <%= form_for(@booking, url: bookings_path) do |f| %>
+  <%= form_for(@booking, :html=>{:remote=>true}) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
 
       <div class="form-group">
+       <%= f.label :first_name, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
+        </div>
+      <div class="form-group">
         <%= f.text_field :first_name, class: 'form-control form-control-user', id: "exampleFirstName", placeholder: "First Name" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :second_name, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
       </div>
 
       <div class="form-group">
@@ -20,7 +30,15 @@
       </div>
 
       <div class="form-group">
+        <%= f.label :email, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
+      </div>
+
+      <div class="form-group">
         <%= f.email_field :email, class: "form-control form-control-user", id: "exampleInputEmail", placeholder: "Email Address" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :phone, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
       </div>
 
       <div class="form-group">
@@ -28,14 +46,22 @@
       </div>
 
       <div class="form-group">
-        <%= f.text_field :indication, class: "form-control form-control-user", id: "exampleInputIndication", placeholder: "Indication" %>
+        <%= f.label :indication, "Disease type", style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
       </div>
 
       <div class="form-group">
-        <%= f.text_field :message, class: "form-control form-control-user", id: "exampleInputMessage", placeholder: "Message" %>
+        <%= f.text_field :indication, class: "form-control form-control-user", id: "exampleInputIndication", placeholder: "Disease type" %>
       </div>
 
-      <%= f.submit "Save Changes", class: "btn btn-primary btn-user btn-block" %>
+      <div class="form-group">
+        <%= f.label :message, style: "padding-top:7px; font-weight:bold; font-size:20px;" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.text_area :message, class: "form-control form-control-user",rows: "5", cols: "10",placeholder: "Inquiry", style: "resize:none;" %>
+      </div>
+
+      <%= f.submit "Save Changes", class: "btn btn-primary btn-user btn-block", id: "submit-button" %>
   <% end %>
 
 </div>

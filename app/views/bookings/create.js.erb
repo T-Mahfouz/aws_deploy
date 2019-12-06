@@ -1,0 +1,10 @@
+$(".notice").remove();
+
+<% @booking.errors.each do |key, value| %>
+$("#helpBlock").append("<div class='notice' style='color:red;'><%= escape_javascript(value.humanize)%></div>");
+<% end %>
+
+<% if !@booking.errors %>
+$("#helpBlock").append("<div class='notice' style='color:green;'> Booking request Submitted </div>");
+
+<%end%>

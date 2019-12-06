@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2019_12_05_095656) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -48,13 +51,6 @@ ActiveRecord::Schema.define(version: 2019_12_05_095656) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_bookings_on_email", unique: true
-  end
-
-  create_table "complains", force: :cascade do |t|
-    t.string "comment"
-    t.integer "complain_number"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
