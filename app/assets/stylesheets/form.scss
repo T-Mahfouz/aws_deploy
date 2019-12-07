@@ -25,6 +25,12 @@
   &-row{
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: 900px) and (min-width:786px)  {
+      flex-direction: column;
+    }
+    @media only screen and (max-width: 500px)  {
+      flex-direction: column;
+    }
     &-left{
       flex: 0 0 48%;
     }

@@ -18,10 +18,16 @@
   &-icon{
     padding: 0 15px;
   }
+  @media only screen and (max-width: 786px) {
 
+  }
 }
+
 .menubutton {
   display: none;
+  @media only screen and (max-width: 786px) {
+      display: block;
+  }
 }
 .logo-container{
   flex: 0 0 20%;
@@ -70,4 +76,9 @@
   @media only screen and (min-width:1440px) {
   left: initial;
   }
+  @media only screen and (max-width: 1100px){
+    left: 0;
+  }
+
 }
+
