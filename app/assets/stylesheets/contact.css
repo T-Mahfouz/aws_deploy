@@ -52,7 +52,7 @@
     100% {-webkit-transform: rotate(360deg);}
 }
 
-.fa{
+.fa-customize{
     color:blue;
     font-size:18px !important;
     position:absolute;
