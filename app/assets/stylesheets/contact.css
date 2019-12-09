@@ -11,10 +11,6 @@
 .ajax-button{
     position:relative;
     display:inline-block;
-    width:100px;
-    height:40px;
-    left:45%;
-    top:50%;
     text-align:center;
 }
 .submit{
