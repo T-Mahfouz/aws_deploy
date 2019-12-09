@@ -1,4 +1,4 @@
-<section class="cards-section">
+<section class="cards-section <%= is_arabic? ? 'text-right-custom': '' %>">
     <div class="cards-container">
       <div class="cards-row">
         <div class="health-cards">
@@ -8,10 +8,10 @@
             </div>
           </div>
           <div class="health-card-heading">
-            Where people come first
+            <%= t  :world_renowned_experts %>
           </div>
           <div class="health-card-text gray-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor error harum natus omnis quaerat recusandae.
+            <%= t  :our_experts %>
           </div>
         </div>
         <div class="health-cards">
@@ -23,22 +23,22 @@
             </div>
           </div>
           <div class="health-card-heading">
-            Where people come first
+            <%= t  :world_renowned_experts %>
           </div>
           <div class="health-card-text gray-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor error harum natus omnis quaerat recusandae.
+            <%= t  :case_manager %>
           </div>
         </div>
         <div class="health-cards health-blue-card">
           <div class="health-card-text-white-sm">
-            Always there to care.
+            <%= t :always_there %>
           </div>
           <div class="health-card-heading-white">
-            Working Hours
+            <%= t :working_hour %>
           </div>
           <div class="health-card-text-row">
             <div class="health-card-day-name">
-              MONDAY
+              <%= t :monday %>
             </div>
             <div class="health-card-dot-name"></div>
             <div class="health-card-time-slot">
@@ -47,7 +47,7 @@
           </div>
           <div class="health-card-text-row">
             <div class="health-card-day-name">
-              TUESDAY
+              <%= t :tuesday %>
             </div>
             <div class="health-card-dot-name"></div>
             <div class="health-card-time-slot">
@@ -56,7 +56,7 @@
           </div>
           <div class="health-card-text-row">
             <div class="health-card-day-name">
-              WEDNESDAY
+             <%= t :wednesday %>
             </div>
             <div class="health-card-dot-name"></div>
             <div class="health-card-time-slot">
@@ -65,7 +65,7 @@
           </div>
           <div class="health-card-text-row">
             <div class="health-card-day-name">
-              THURSDAY
+              <%= t :thursday %>
             </div>
             <div class="health-card-dot-name"></div>
             <div class="health-card-time-slot">
@@ -74,7 +74,7 @@
           </div>
           <div class="health-card-text-row">
             <div class="health-card-day-name">
-              FRIDAY
+             <%= t :friday %>
             </div>
             <div class="health-card-dot-name"></div>
             <div class="health-card-time-slot">
@@ -83,7 +83,7 @@
           </div>
           <div class="health-card-text-row">
             <div class="health-card-day-name">
-              SAT/SUN
+             <%= t :saturday %>/ <%= t :sunday %>
             </div>
             <div class="health-card-dot-name"></div>
             <div class="health-card-time-slot">

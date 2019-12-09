@@ -8,11 +8,11 @@
       <div class="menu-items-center u-flex-1 menu-item-mob">
       <div class="menu-items u-d-flex ">
         <div class="menu-item active">
-         <a href="<%= root_path %>"> Home </a>
+         <a href="<%= root_path %>"> <%= t :home %> </a>
         </div>
 <!--        <div class="menu-item">Treatment</div>-->
-        <div class="menu-item"><a href="<%= about_path %>">About us </a></div>
-        <div class="menu-item"><a href="<%= contact_path%>">Contact </a></div>
+        <div class="menu-item"><a href="<%= about_path %>"><%= t :about_us %> </a></div>
+        <div class="menu-item"><a href="<%= contact_path%>"><%= t :contact %> </a></div>
       </div>
       </div>
       <div class="menu-item-right u-d-flex u-align-item-center">
@@ -23,11 +23,17 @@
             <span class="active">1-677-124-44227</span>
           </div>
         </div>
-        <div class="search-icon menu-item-icon">
-          <i class="fa d-none fa-search fa-rotate-90"></i>
-        </div>
+
         <div class="depricon-icon menu-item-icon">
           <i class="fa fa-bars"></i>
+        </div>
+        <div>
+          <select class="language-controller" id="language-change">
+
+            <option value="en">English</option>
+
+            <option value="ar">Arabic</option>
+          </select>
         </div>
       </div>
     </div>
@@ -57,4 +63,5 @@
       </ul>
     </div>
   </nav>
+
 </header>

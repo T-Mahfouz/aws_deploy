@@ -31,11 +31,35 @@
           autoplaySpeed: 2000,
           autoplay: true,
       });
+
+      $('#language-change').change(function (e) {
+          console.log("contact")
+          $('#language-change').val(e.target.value);
+          window.location.replace(`${window.location.pathname}?locale=${e.target.value}`);
+      })
       
        $("#new_booking").on('submit', function(){
          var phone_number = $("#phone").intlTelInput("getNumber")
          $("#phone")[0].value = phone_number
       });
+      var getUrlParameter = function getUrlParameter(sParam) {
+          var sPageURL = window.location.search.substring(1),
+              sURLVariables = sPageURL.split('&'),
+              sParameterName,
+              i;
+
+          for (i = 0; i < sURLVariables.length; i++) {
+              sParameterName = sURLVariables[i].split('=');
+
+              if (sParameterName[0] === sParam) {
+                  return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+              }
+          }
+      };
+      var local ='<%= session[:locale] %>';
+      if(local) {
+          $('#language-change').val(local);
+      }
   </script>
   </body>
 </html>

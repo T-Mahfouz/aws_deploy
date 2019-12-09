@@ -1,5 +1,10 @@
 
 $(document).ready(function() {
+    // $('#language-change').change(function (e) {
+    //     console.log("contact")
+    //     $('#language-change').val(e.target.value);
+    //     window.location.replace(`${window.location.pathname}?locale=${e.target.value}`);
+    // })
     $('#new_booking').on('ajax:success', function(e, data, status, xhr){
         $(".submit").addClass("loading");
         setTimeout(function() {
