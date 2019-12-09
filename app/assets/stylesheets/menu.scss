@@ -7,18 +7,27 @@
   right: 0;
   background-color: #Fff;
   z-index: 99;
+  box-shadow: 0 1px 3px rgba(0,0,0,.11);
 }
 .menu-item{
   &s-container{
     display: flex;
+    max-width: 1440px;
+    margin: auto;
   }
   &-icon{
     padding: 0 15px;
   }
+  @media only screen and (max-width: 786px) {
 
+  }
 }
+
 .menubutton {
   display: none;
+  @media only screen and (max-width: 786px) {
+      display: block;
+  }
 }
 .logo-container{
   flex: 0 0 20%;
@@ -27,24 +36,35 @@
   flex: 0 0 30%;
 }
 .menu-item{
-  width: 20%;
+  width: 18%;
   min-width: 100px;
   text-transform: uppercase;
   font-family: 'Roboto',sans-serif;
   color:#000;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   &:hover{
     color: #00a0f0;
   }
+  &  a{
+    color: #000;
+  }
+  & a:hover{
+    color: #00a0f0;
+  }
 }
+
 .menu-items a:hover{
   text-decoration: none;
 }
 .active{
   color: #00a0f0;
+  & a{
+    color: #00a0f0;
+  }
 }
+
 .phone-container{
   padding-right: 20px;
   border-right: 1px dashed #ccc;
@@ -52,4 +72,13 @@
 .logo-image{
   position: absolute;
   top: 0px;
+  left: 70px;
+  @media only screen and (min-width:1440px) {
+  left: initial;
+  }
+  @media only screen and (max-width: 1100px){
+    left: 0;
+  }
+
 }
+

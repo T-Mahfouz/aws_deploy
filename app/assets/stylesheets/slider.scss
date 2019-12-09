@@ -40,4 +40,30 @@
     font-weight: 400;
     font-style: normal;
   }
+  &-data-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 999;
+    text-align: center;
+    background-color: rgba(0,0,0,.2);
+    padding: 20px;
+
+  }
+  &-heading{
+    font-size: 75px;
+    line-height: 87px;
+    font-weight: 300;
+    white-space: nowrap;
+    @media only screen and(max-width: 768px) {
+      white-space: pre-wrap;
+      font-size: 50px;
+      line-height: 40px;
+    }
+  }
+}
+.slide{
+  position: relative;
 }

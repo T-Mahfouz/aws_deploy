@@ -1,15 +1,10 @@
-
 $(".notice").remove();
-<% @booking.errors.full_messages.each do |message| %>
-$("#helpBlock").append("<div class='notice' style='color:red;'><%= escape_javascript( message.humanize)%></div>");
+
+<% if @booking.errors.full_messages.present? %>
+  <% @booking.errors.full_messages.each do |message| %>
+  $("#helpBlock").append("<div class='notice' style='color:red;'><%= escape_javascript( message.humanize)%></div>");
+  <% end %>
+<%else %>
+  $("#helpBlock").append("<div class='notice' style='color:green;'> Booking request Submitted </div>");
+   document.getElementById("new_booking").reset();
 <% end %>
-
-
-<% if @booking.save %>
-$("#helpBlock").append("<div class='notice' style='color:green;'> Booking request Submitted </div>");
-<%end%>
-
-
-
-
-
