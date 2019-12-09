@@ -6,12 +6,12 @@
 .slick-prev{
     z-index: 999;
     transform: scale(1.5);
-    left: 30;
+    left: 30px;
 }
 
 .slick-next {
     z-index: 999;
-    right: 30;
+    right: 30px;
     transform: scale(1.5);
 }
 .slider{
@@ -19,6 +19,10 @@
       background-image: url("https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/title-area-1.jpg");
     height: 450px;
     margin-bottom: 75px;
+    @media only screen and (max-width:786px) {
+      height: 100vh;
+      background-size: cover;
+    }
   }
   &-text-container{
     position: absolute;
@@ -27,11 +31,14 @@
     transform: translate(-50%,-50%);
     text-align: center;
     color: #fff;
+    max-width: 100vw;
+    overflow: hidden;
   }
   &-heading{
     color: #fff;
     line-height: 87px;
     font-size: 75px;
+   // direction: rtl;
   }
   &-text{
     font-size: 18px;
@@ -39,6 +46,8 @@
     line-height: 34px;
     font-weight: 400;
     font-style: normal;
+    //direction: rtl;
+
   }
   &-data-text{
     position: absolute;
@@ -50,13 +59,17 @@
     text-align: center;
     background-color: rgba(0,0,0,.2);
     padding: 20px;
+    max-width: 100vw;
+    overflow: hidden;
+    width: 80vh;
+    min-width: 300px;
 
   }
   &-heading{
-    font-size: 75px;
+    font-size: 60px;
     line-height: 87px;
     font-weight: 300;
-    white-space: nowrap;
+    //white-space: nowrap;
     @media only screen and(max-width: 768px) {
       white-space: pre-wrap;
       font-size: 50px;
@@ -66,4 +79,5 @@
 }
 .slide{
   position: relative;
+  overflow: hidden;
 }
