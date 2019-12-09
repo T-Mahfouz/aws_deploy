@@ -32,7 +32,7 @@
           autoplay: true,
       });
 
-      $('#language-change').change(function (e) {
+      $('.language-change').change(function (e) {
           console.log("contact")
           $('#language-change').val(e.target.value);
           window.location.replace(`${window.location.pathname}?locale=${e.target.value}`);
@@ -58,7 +58,7 @@
       };
       var local ='<%= session[:locale] %>';
       if(local) {
-          $('#language-change').val(local);
+          $('.language-change').val(local);
       }
   </script>
   </body>
