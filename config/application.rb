@@ -10,6 +10,12 @@ module PulsApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
+    config.i18n.load_path += Dir[File.join(Rails.root, 'config', 'locales', '**', '*.{rb,yml}')]
+    # Permitted locales available for the application
+    I18n.available_locales = [:en, :ar]
+
+    # Set default locale to something other than :en
+    I18n.default_locale = :en
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

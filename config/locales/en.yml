@@ -30,4 +30,8 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  ask_plus_one_expert: "Ask PlusOne Expert"
+  world_renowned_experts: 'World-Renowned Experts'
+  slider_description: 'PlusOne ensures a hassle-free medical journey powered by a case manager for every individual case.'
+  timely_consultations: 'Timely Consultations'
+  trustful_workflow: 'Trustful Workflow'
