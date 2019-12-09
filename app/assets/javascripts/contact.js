@@ -1,20 +1,17 @@
-$(document).on('ready',function () {
-    // $("#submit-button").on('click',function(){
-    //     $.ajax({
-    //         type: "POST",
-    //         url : "bookings/contact",
-    //         data : $(".new_booking").serialize(),
-    //         success: function(){
-    //             alert("submitted");
-    //         },
-    //         error: function(data){
-    //             var r = jQuery.parseJSON(data.responseText);
-    //             alert("Message: " + r.Message);
-    //         }
-    //     });
-    // });
 
-    
-
-
+$(document).ready(function() {
+    $(".submit").on('click',(function() {
+        $(".submit").addClass("loading");
+        setTimeout(function() {
+            $(".submit").addClass("hide-loading");
+            // For failed icon just replace ".done" with ".failed"
+            $(".done").addClass("finish");
+        }, 3000);
+        setTimeout(function() {
+            $(".submit").removeClass("loading");
+            $(".submit").removeClass("hide-loading");
+            $(".done").removeClass("finish");
+            $(".failed").removeClass("finish");
+        }, 5000);
+    }));
 });

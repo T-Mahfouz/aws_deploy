@@ -1,3 +1,7 @@
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
 <% provide(:title, 'Booking') %>
 
 <div class="container" style="padding:100px;">
@@ -55,7 +59,10 @@
       <div class="form-group">
         <%= f.text_area :inquiry, class: "form-control form-control-user",rows: "5", cols: "10",placeholder: "Inquiry", style: "resize:none;" %>
       </div>
-
-      <%= f.submit "Save Changes", class: "btn btn-primary btn-user btn-block", id: "submit-button" %>
-  <% end %>
+      <div class="ajax-button">
+      <div class="fa fa-check done"></div>
+      <div class="fa fa-close failed"></div>
+      <%= f.submit "Save Changes", class: "submit animated btn btn-primary", id: "submit" %>
+       </div>
+<% end %>
 </div>
