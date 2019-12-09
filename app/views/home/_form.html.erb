@@ -36,9 +36,14 @@
           <%= f.text_area :inquiry, class: "home-form-input home-form-textarea", placeholder: "Special request..." %>
         </div>
       </div>
-      <div class="appointment-form-button">
-        <%= f.submit 'Submit', class: 'btns btns-submit' %>
-      </div>
+      <!--<div class="appointment-form-button">-->
+        <!--<%#= f.submit 'Submit', class: 'btns btns-submit' %>-->
+      <!--</div>-->
+        <div class="ajax-button appointment-form-button">
+          <div class="fa fa-check done"></div>
+          <div class="fa fa-close failed" style="color:red !important;"></div>
+          <%= f.submit "Save Changes", class: "submit btn btn-primary", id: "submit" %>
+        </div>
     <% end %>
   </div>
 </div>
