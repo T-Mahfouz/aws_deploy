@@ -1,16 +1,16 @@
-<main class="padding-top-75">
+<main class="padding-top-75 ">
   <div id="slideshow" class="sliders">
     <div class="active-slide slide">
       <%= image_tag "Slider1Pictures/1.jpg", class:"image" %>
       <div class="slider-data-text">
         <div class="slider-heading">
-          World-Renowned Experts
+          <%= t :world_renowned_experts %>
         </div>
         <div class="slider-text mt-2 mr-5 ml-5">
-          PlusOne ensures a hassle-free medical journey powered by a case manager for every individual case.
+          <%= t  :slider_description %>
         </div>
         <button class="btns btns-submit mt-5">
-          Ask PlusOne Expert
+          <%= t :ask_plus_one_expert %>
         </button>
       </div>
 
@@ -19,13 +19,13 @@
       <%= image_tag "Slider1Pictures/2.jpg", class:"image" %>
       <div class="slider-data-text">
         <div class="slider-heading">
-          Timely Consultations
+          <%= t  :timely_consultations %>
         </div>
         <div class="slider-text mt-2 mr-5 ml-5">
-          PlusOne ensures a hassle-free medical journey powered by a case manager for every individual case.
+          <%= t  :slider_description %>
         </div>
         <button class="btns btns-submit mt-5">
-          Ask PlusOne Expert
+          <%= t :ask_plus_one_expert %>
         </button>
       </div>
     </div>
@@ -33,27 +33,30 @@
       <%= image_tag "Slider1Pictures/3.jpg", class:"image" %>
       <div class="slider-data-text">
         <div class="slider-heading">
-          Trustful Workflow
+          <%= t :trustful_workflow %>
         </div>
         <div class="slider-text mt-2 mr-5 ml-5">
-          PlusOne ensures a hassle-free medical journey powered by a case manager for every individual case.
+          <%= t  :slider_description %>
         </div>
         <button class="btns btns-submit mt-5">
-          Ask PlusOne Expert
+          <%= t :ask_plus_one_expert %>
         </button>
       </div>
     </div>
   </div>
-  <section class="services-section">
+  <section class="services-section <%= is_arabic? ? 'text-right-custom': '' %>">
     <div class="services-container">
       <div class="services-item">
         <div class="services-icon">
           <i class="fa fa-ambulance fa-4x active"></i>
         </div>
         <div class="services-detail">
-          <div class="services-heading heading-s">People first</div>
+          <div class="services-heading heading-s">
+            <%= t :world_renowned_experts %>
+          </div>
           <div class="services-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <%= t  :slider_description %>
+
           </div>
         </div>
       </div>
@@ -62,9 +65,12 @@
           <i class="fa fa-ambulance fa-4x active"></i>
         </div>
         <div class="services-detail">
-          <div class="services-heading heading-s">Quality care</div>
+          <div class="services-heading heading-s">
+            <%= t :trustful_workflow %>
+
+          </div>
           <div class="services-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <%= t  :slider_description %>
           </div>
         </div>
       </div>
@@ -73,16 +79,19 @@
           <i class="fa fa-phone fa-rotate-270 fa-4x active"></i>
         </div>
         <div class="services-detail services-detail-border-none">
-          <div class="services-heading heading-s">Great service</div>
+          <div class="services-heading heading-s">
+            <%= t  :timely_consultations %>
+
+          </div>
           <div class="services-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <%= t  :slider_description %>
           </div>
         </div>
       </div>
     </div>
   </section>
   <%= render partial: 'working_hours' %>
-  <section class="quality-container">
+  <section class="quality-container <%= is_arabic? ? 'text-right-custom': '' %>">
     <div class="quality-background-container">
       <div class="quality-left-side">
           <div class="quality-item">
@@ -93,10 +102,10 @@
             </div>
               <div class="quality-item-right">
                 <div class="quality-item-heading">
-                  With us, it’s always personal
+                  <%= t  :equality %>
                 </div>
                 <div class="quality-item-text gray-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <%= t  :equality_text %>
                 </div>
               </div>
           </div>
@@ -108,10 +117,10 @@
           </div>
           <div class="quality-item-right">
             <div class="quality-item-heading">
-              The Highest Quality Healthcare
+              <%= t :security %>
             </div>
             <div class="quality-item-text gray-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <%= t :security_text %>
             </div>
           </div>
         </div>
@@ -123,10 +132,10 @@
           </div>
           <div class="quality-item-right">
             <div class="quality-item-heading">
-              Improving the Quality of Your Life at Home
+             <%= t :quality %>
             </div>
             <div class="quality-item-text gray-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <%= t :quality_text  %>
             </div>
           </div>
         </div>
@@ -138,10 +147,10 @@
           </div>
           <div class="quality-item-right">
             <div class="quality-item-heading">
-              Leading the Way in Medical Excellence
+              <%= t :innovation %>
             </div>
             <div class="quality-item-text gray-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <%= t :innoation_text %>
             </div>
           </div>
         </div>
@@ -152,46 +161,46 @@
       </div>
     </div>
   </section>
-  <section class="counter-container">
+  <section class="counter-container <%= is_arabic? ? 'text-right-custom': '' %>">
     <div class="counter-back-image">
       <div class="counter-background-color-blue">
         <div class="counter-item">
           <div class="count counter-value">
-            189
+            25
           </div>
           <div class="counter-name">
-            Happy Patients
+            <%= t  :oncologists %>
           </div>
         </div>
         <div class="counter-item">
           <div class="count counter-value">
-            2590
+            12
           </div>
           <div class="counter-name">
-            Health Departments
+            <%= t   :neurologists %>
           </div>
         </div>
         <div class="counter-item">
           <div class="count counter-value">
-            347
+           9
           </div>
           <div class="counter-name">
-            Blood Donations
+            <%= t  :orthopedics%>
           </div>
         </div>
         <div class="counter-item">
           <div class="count counter-value">
-            1912
+            5
           </div>
           <div class="counter-name">
-            Different Services
+           <%= t   :gynecologists %>
           </div>
         </div>
       </div>
     </div>
   </section>
   <%= render partial: 'qualified' %>
-  <section class="reviews-container">
+  <section class="reviews-container <%= is_arabic? ? 'text-right-custom': '' %>">
     <div class="reviews-inner-container">
 
        <%= render partial: 'form' %>

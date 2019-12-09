@@ -30,4 +30,62 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  ask_plus_one_expert: "Ask PlusOne Expert"
+  world_renowned_experts: 'World-Renowned Experts'
+  slider_description: 'PlusOne ensures a hassle-free medical journey powered by a case manager for every individual case.'
+  timely_consultations: 'Timely Consultations'
+  trustful_workflow: 'Trustful Workflow'
+  where_people_come_first: 'Where people come first'
+  our_experts: "Our experts are medical consultants who come from world centers of excellence from USA and Europe"
+  case_manager : "PlusOne case managers will accompany you in your care journey of whether selection of the best expert for your case or pursuing your medical care abroad."
+  oncologists :	"Oncologists"
+  neurologists : "Neurologists"
+  orthopedics: "Orthopedics"
+  gynecologists: 'Gynecologists'
+  equality : "Equality"
+  elquality_text : "Humans are created equal; Healthcare is an equal right to all"
+  security : "Security"
+  security_text : "Patients' records are to be treated with the highest aspects of privacy"
+  quality : 'Quality'
+  quality_text : 'When it comes to human health, only the best options are to be considered'
+  innovation : "Innovation"
+  innoation_text : " We endlessly evolve our processes and tools to be able to match our equality and quality values"
+  about_us : 'About us'
+  about_us_text: "We do believe unreservedly in Equality In Healthcare,  and as what cannot be achieved completely is not to be missed completely, in our relentless search for such equality, we shall exert every second of effort to achieve the most we can for every patient in the regions we chose to serve"
+  home: "Home"
+  treatment: "Treatment"
+  contact: "Contact"
+  useful_link: 'Useful Link'
+  faq: 'Faq'
+  Q1: "How can I use PlusOne? "
+  Q1Ans: 'PlusOne gives patients the ability to get a Second Opinion from world-renowned experts. You can also request to receive our services through your treating doctor or our Case Managers who are qualified physicians themselves.
+
+  Get your Second Opinion by starting here <<link to the form on Ask PlusOne Expert>> Our team will get back to you within two business days?'
+  Q2: "Why do I as a patient need a Second Opinion? "
+  Q2Ans : "You can get a second (or third, or more) opinion for many reasons. The American Cancer Society mentions the following reasons given by people:
+
+           You want to know about other possible choices for treatment
+           You are diagnosed with a rare or unusual disease
+           You’re having communication issues with your doctor or you want someone else to explain to you your diagnosis and treatment options"
+  Q3: "What are the available specialties? "
+  Q3Ans: 'Currently, PlusOne provides access to top-notch world-leading experts in Oncology, Neurology, Orthopedics and Gynecology.
+          We are working diligently to add more specialties of other critical conditions very soon.  '
+  Q4: "How much time does it take until I get the Second Opinion report from the consultant? "
+  Q4Ans: "Assuming all relevant data, scans and reports were uploaded correctly and fully at the time of requesting the Second Opinion, the Second Opinion will be provided to the patient within 7 business days. "
+  Q5: "Can I ask for clarifications or have follow-up questions?"
+  Q5Ans: "In case of further clarifications required from the Second Opinion providers, a window of 14 consecutive days are there to submit further questions."
+  Q6: "How much Does it cost? "
+  Q6Ans: "This depends greatly on the consultant selected as well as the case complexity, our case managers can help you with such estimations, are you ready to request a consultation: click here."
+  always_there: 'Always there to care.'
+  first_name : "First Name"
+  last_name: "Last Name"
+  email : 'Email'
+  diaease_type : 'Diaease Type'
+  working_hour: 'Working Hours'
+  monday: "Monday"
+  tuesday: "Tuesday"
+  wednesday: "Wednesday"
+  thursday: "Thursday"
+  friday: "Friday"
+  saturday: "SAT"
+  sunday: "SUN"

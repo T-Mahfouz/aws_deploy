@@ -133,7 +133,7 @@
     font-weight: 400;
     letter-spacing: 0px;
     text-transform: none;
-    text-align: right;
+    //text-align: right;
     margin: 15px 0;
   }
   &-blue-card{
@@ -448,4 +448,12 @@
 ::selection{
   background: #1abc9c;
   color: #fff;
+}
+.text-right-custom .card{
+  text-align: right;
+  direction: rtl;
+}
+.text-right-custom{
+  text-align: right;
+  direction: rtl;
 }

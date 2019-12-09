@@ -16,14 +16,26 @@
 }
 .slider{
   &-back-image-container{
-      background-image: url("https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/title-area-1.jpg");
+      background-image: image_url('AboutUs/ABOUT-US-.jpg');
     height: 450px;
     margin-bottom: 75px;
+    background-position: top;
     @media only screen and (max-width:786px) {
       height: 100vh;
       background-size: cover;
     }
   }
+  &-back-image-container-contact{
+    background-image: image_url('ContactUs/CONTACT-US-.jpg');
+    height: 450px;
+    margin-bottom: 75px;
+    background-position: top;
+    @media only screen and (max-width:786px) {
+      height: 100vh;
+      background-size: cover;
+    }
+  }
+
   &-text-container{
     position: absolute;
     top: 50%;
@@ -33,6 +45,7 @@
     color: #fff;
     max-width: 100vw;
     overflow: hidden;
+    background-color: rgba(0,0,0,.4);
   }
   &-heading{
     color: #fff;

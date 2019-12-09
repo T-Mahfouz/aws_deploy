@@ -7,5 +7,8 @@ class HomeController < ApplicationController
   def contact
     @booking = Booking.new
   end
+  def faq
+
+  end
   
 end

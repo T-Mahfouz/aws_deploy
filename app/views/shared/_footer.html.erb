@@ -6,8 +6,7 @@
           Puls one
         </div>
         <div class="footer-col-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Dignissimos dolores dolorum explicabo facilis magni quasi reiciendis rem repellat sapiente totam.
+          <%= t :about_us_text %>
         </div>
         <div class="footer-socail-link">
           <i class="fa fa-facebook footer-icon"></i>
@@ -19,12 +18,18 @@
       </div>
       <div class="footer-col footer-col2">
         <div class="footer-col-heading">
-          Useful links
+          <%= t :useful_link %>
         </div>
-        <div class="footer-col-link footer-col-link1">Home</div>
-        <div class="footer-col-link footer-col-link2">Treatment</div>
-        <div class="footer-col-link footer-col-link3">About us</div>
-        <div class="footer-col-link footer-col-link4">contact</div>
+        <a class="footer-col-link" href="/">
+          <div class="footer-col-link footer-col-link1"><%= t :home %></div></a>
+        <a class="footer-col-link" href="<%= about_path %>">
+          <div class="footer-col-link footer-col-link3"><%= t :about_us %></div></a>
+        <a class="footer-col-link" href="<%= contact_path %>">
+        <div class="footer-col-link footer-col-link4"><%= t :contact %></div>
+        </a>
+        <a class="footer-col-link" href="<%= faq_path %>">
+          <div class="footer-col-link footer-col-link4"> <%= t :faq %></div></a>
+
       </div>
       <div class="footer-col footer-col3">
         <div class="footer-col-heading">
@@ -44,8 +49,7 @@
           Twitter
         </div>
         <div class="footer-col-twitter-hash-tag">
-          #wordpress #designertrends #inspiration #webdesign
-          #graphicdesign #photoshop #portfoliodesign #webdesign
+
           https://t.co/o3eGXK14AV
         </div>
       </div>
