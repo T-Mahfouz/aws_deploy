@@ -20,8 +20,11 @@
   line-height: 26px;
   font-style: normal;
   font-weight: 400;
+  //text-align: right;
+  //direction: rtl;
 }
 .heading-lg{
+  //direction: rtl;
   color: #373737;
   font-family: 'Roboto',sans-serif;
   font-size: 44px;
@@ -30,6 +33,7 @@
   font-weight: 300;
   letter-spacing: 0px;
   text-transform: none;
+  text-align: right;
 }
 heading-md{
   color: #181c1b;
