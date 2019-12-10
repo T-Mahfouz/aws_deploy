@@ -11,29 +11,29 @@
       <%= render 'shared/error_messages', object: f.object %>
       <div class="appointment-form-row">
         <div class="appointment-form-row-left">
-          <%= f.text_field :first_name, class: 'home-form-input', placeholder: 'First name' %>
+          <%= f.text_field :first_name, class: 'home-form-input', placeholder: "#{ t :first_name}" %>
         </div>
         <div class="appointment-form-row-right">
-          <%= f.text_field :second_name, class: 'home-form-input', placeholder: "Last Name" %>
+          <%= f.text_field :second_name, class: 'home-form-input', placeholder: "#{t :last_name}" %>
         </div>
       </div>
       <div class="appointment-form-row">
         <div class="appointment-form-row-left">
-          <%= f.text_field :email, class: 'home-form-input', placeholder: "Email" %>
+          <%= f.text_field :email, class: 'home-form-input', placeholder: "#{t :email}" %>
         </div>
         <div class="appointment-form-row-right">
           <%# <%= f.number_field :phone, class: 'home-form-input', placeholder: "Phone" %>
-          <%= f.text_field :disease_type, class: "home-form-input", placeholder: "Disease type" %>
+          <%= f.text_field :disease_type, class: "home-form-input", placeholder: "#{t :diaease_type}" %>
 
         </div>
       </div>
       <div class="appointment-form-row appointment-form-phone">
-        <%= f.telephone_field :phone, id: 'phone', class: 'home-form-input', placeholder: "Phone" %>
+        <%= f.telephone_field :phone, id: 'phone', class: 'home-form-input', placeholder: "#{t :Phone}" %>
 
       </div>
       <div class="appointment-form-row">
         <div class="appointment-form-row-text-area">
-          <%= f.text_area :inquiry, class: "home-form-input home-form-textarea", placeholder: "Special request..." %>
+          <%= f.text_area :inquiry, class: "home-form-input home-form-textarea", placeholder: "#{t :special_request }..." %>
         </div>
       </div>
       <!--<div class="appointment-form-button">-->

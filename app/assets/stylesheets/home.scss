@@ -35,10 +35,17 @@
   }
   &-item{
     display: flex;
-    padding: 45px 20px 60px;
+    margin: 45px 20px 60px;
     align-items: center;
+    border-right: 1px dashed #cccccc;
     @media only screen and (max-width: 800px) {
       border-bottom:1px dashed #cccccc;
+      border-right: none;
+
+    }
+    &:last-child{
+      border-right: none;
+      border-bottom: none;
     }
   }
   &-icon{
@@ -48,7 +55,7 @@
   &-detail{
     flex: 0 0 65%;
     padding: 10px 50px 10px 0px;
-    border-right: 1px dashed #cccccc;
+    //border-right: 1px dashed #cccccc;
     @media only screen and (max-width: 800px) {
      border-right: none;
     }
@@ -456,4 +463,17 @@
 .text-right-custom{
   text-align: right;
   direction: rtl;
+}
+.card-header-custom{
+  background-color: transparent;
+  padding: 5px 10px;
+  & button{
+    //color: #000;
+    font-weight: 500;
+    padding: 3px;
+    &:hover{
+      color: #000;
+      text-decoration: none;
+    }
+  }
 }
