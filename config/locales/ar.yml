@@ -56,3 +56,6 @@ ar:
   friday : "يوم الجمعة"
   saturday: "يوم السبت"
   sunday: "الأحد"
+  closed : "مغلق"
+  Phone : 'هاتف'
+  special_request : 'طلب خاص'

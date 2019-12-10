@@ -89,3 +89,6 @@ en:
   friday: "Friday"
   saturday: "SAT"
   sunday: "SUN"
+  closed : 'Closed'
+  Phone: 'Phone'
+  special_request: 'Special Request'

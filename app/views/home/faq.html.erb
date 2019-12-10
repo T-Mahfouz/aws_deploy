@@ -1,10 +1,11 @@
-<main class="padding-top-75 <%= is_arabic? ? 'text-right-custom': '' %>">
+<div class="padding-top-75 <%= is_arabic? ? 'text-right-custom': '' %>">
   <h1 class="text-center mt-5 mb-5 ">
     <%= t :faq %>
   </h1>
+  <div class="container">
     <div class="accordion" id="accordionExample">
       <div class="card">
-        <div class="card-header" id="headingOne">
+        <div class="card-header card-header-custom" id="headingOne">
           <h2 class="mb-0">
             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               <%= t :Q1 %>
@@ -19,7 +20,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header card-header-custom" id="headingTwo">
           <h2 class="mb-0">
             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
              <%= t :Q2 %>
@@ -33,7 +34,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card-header" id="headingThree">
+        <div class="card-header card-header-custom" id="headingThree">
           <h2 class="mb-0">
             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
              <%= t :Q3 %>
@@ -48,7 +49,7 @@
       </div>
     </div>
   <div class="card">
-    <div class="card-header" id="headingOne">
+    <div class="card-header card-header-custom" id="headingOne">
       <h2 class="mb-0">
         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="true" aria-controls="collapseOne">
           <%= t :Q4 %>
@@ -63,9 +64,9 @@
     </div>
   </div>
   <div class="card">
-    <div class="card-header" id="headingOne">
+    <div class="card-header card-header-custom" id="headingOne">
       <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link btn-plus-button" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
           <%= t :Q5 %>
         </button>
       </h2>
@@ -78,7 +79,7 @@
     </div>
   </div>
   <div class="card">
-    <div class="card-header" id="headingOne">
+    <div class="card-header card-header-custom" id="headingOne">
       <h2 class="mb-0">
         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseOne">
           <%= t :Q6 %>
@@ -92,4 +93,7 @@
       </div>
     </div>
   </div>
+  </div>
+  <div class="padding-top-75">
+</div>
 </main>
