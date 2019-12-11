@@ -4,10 +4,10 @@
       <%= image_tag "Slider1Pictures/1.jpg", class:"image" %>
       <div class="slider-data-text">
         <div class="slider-heading">
-          <%= t :world_renowned_experts %>
+          <%= t :second_opinion %>
         </div>
         <div class="slider-text mt-2 mr-5 ml-5">
-          <%= t  :slider_description %>
+          <%=   t  :slider_one %>
         </div>
         <button class="btns btns-submit mt-5">
           <%= t :ask_plus_one_expert %>
@@ -19,10 +19,10 @@
       <%= image_tag "Slider1Pictures/2.jpg", class:"image" %>
       <div class="slider-data-text">
         <div class="slider-heading">
-          <%= t  :timely_consultations %>
+          <%= t  :second_opinion %>
         </div>
         <div class="slider-text mt-2 mr-5 ml-5">
-          <%= t  :slider_description %>
+          <%= t  :slider_two %>
         </div>
         <button class="btns btns-submit mt-5">
           <%= t :ask_plus_one_expert %>
@@ -33,10 +33,10 @@
       <%= image_tag "Slider1Pictures/3.jpg", class:"image" %>
       <div class="slider-data-text">
         <div class="slider-heading">
-          <%= t :trustful_workflow %>
+          <%= t :second_opinion %>
         </div>
         <div class="slider-text mt-2 mr-5 ml-5">
-          <%= t  :slider_description %>
+          <%= t  :slider_three %>
         </div>
         <button class="btns btns-submit mt-5">
           <%= t :ask_plus_one_expert %>
@@ -48,21 +48,21 @@
     <div class="services-container">
       <div class="services-item">
         <div class="services-icon">
-          <i class="fa fa-ambulance fa-4x active"></i>
+          <%=image_tag  'WorldRenownExperts.png', class:'services-image-icons'%>
         </div>
         <div class="services-detail">
           <div class="services-heading heading-s">
             <%= t :world_renowned_experts %>
           </div>
           <div class="services-text">
-            <%= t  :slider_description %>
+            <%#= t  :slider_description %>
 
           </div>
         </div>
       </div>
       <div class="services-item">
         <div class="services-icon">
-          <i class="fa fa-ambulance fa-4x active"></i>
+          <%=image_tag  'workflow.png', class:'services-image-icons'%>
         </div>
         <div class="services-detail">
           <div class="services-heading heading-s">
@@ -70,13 +70,13 @@
 
           </div>
           <div class="services-text">
-            <%= t  :slider_description %>
+            <%#= t  :slider_description %>
           </div>
         </div>
       </div>
       <div class="services-item">
         <div class="services-icon">
-          <i class="fa fa-phone fa-rotate-270 fa-4x active"></i>
+          <%=image_tag  'Timely.png', class:'services-image-icons'%>
         </div>
         <div class="services-detail services-detail-border-none">
           <div class="services-heading heading-s">
@@ -84,83 +84,110 @@
 
           </div>
           <div class="services-text">
-            <%= t  :slider_description %>
+            <%#= t  :slider_description %>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <%= render partial: 'working_hours' %>
-  <section class="quality-container <%= is_arabic? ? 'text-right-custom': '' %>">
-    <div class="quality-background-container">
-      <div class="quality-left-side">
-          <div class="quality-item">
-            <div class="quality-item-left">
-              <div class="quality-item-left-icon">
-                <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-1-1.png" alt="icon" class="icon-photo">
-              </div>
-            </div>
-              <div class="quality-item-right">
-                <div class="quality-item-heading">
-                  <%= t  :equality %>
-                </div>
-                <div class="quality-item-text gray-text">
-                <%= t  :equality_text %>
-                </div>
-              </div>
-          </div>
-        <div class="quality-item">
-          <div class="quality-item-left">
-            <div class="quality-item-left-icon">
-              <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-2-1.png" alt="icon" class="icon-photo">
-            </div>
-          </div>
-          <div class="quality-item-right">
-            <div class="quality-item-heading">
-              <%= t :security %>
-            </div>
-            <div class="quality-item-text gray-text">
-            <%= t :security_text %>
-            </div>
-          </div>
+  <section class="slider-three  <%= is_arabic? ? 'text-right-custom': '' %>">
+    <div class="slider-three-background-image-container">
+      <div class="slider-two-text-container">
+        <div class="health-card-heading">
+          <%= t  :vision %>
         </div>
-        <div class="quality-item">
-          <div class="quality-item-left">
-            <div class="quality-item-left-icon">
-              <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-3-1.png" alt="icon" class="icon-photo">
-            </div>
-          </div>
-          <div class="quality-item-right">
-            <div class="quality-item-heading">
-             <%= t :quality %>
-            </div>
-            <div class="quality-item-text gray-text">
-            <%= t :quality_text  %>
-            </div>
-          </div>
-        </div>
-        <div class="quality-item">
-          <div class="quality-item-left">
-            <div class="quality-item-left-icon">
-              <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-4.png" alt="icon" class="icon-photo">
-            </div>
-          </div>
-          <div class="quality-item-right">
-            <div class="quality-item-heading">
-              <%= t :innovation %>
-            </div>
-            <div class="quality-item-text gray-text">
-            <%= t :innoation_text %>
-            </div>
-          </div>
-        </div>
+        <div class="health-card-text gray-text">
+          <%= t  :vision_text %>
 
-      </div>
-      <div class="quality-right-side">
-
+        </div>
       </div>
     </div>
   </section>
+  <section class="slider-two  <%= is_arabic? ? 'text-right-custom': '' %>">
+    <div class="slider-two-background-image-container">
+      <div class="slider-two-text-container">
+        <div class="health-card-heading">
+          <%= t  :world_renowned_experts %>
+        </div>
+        <div class="health-card-text gray-text">
+          <%= t  :our_experts %>.
+          <%= t  :case_manager %>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <%#= render partial: 'working_hours' %>
+<!--  <section class="quality-container <%#= is_arabic? ? 'text-right-custom': '' %>">-->
+<!--    <div class="quality-background-container">-->
+<!--      <div class="quality-left-side">-->
+<!--          <div class="quality-item">-->
+<!--            <div class="quality-item-left">-->
+<!--              <div class="quality-item-left-icon">-->
+<!--                <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-1-1.png" alt="icon" class="icon-photo">-->
+<!--              </div>-->
+<!--            </div>-->
+<!--              <div class="quality-item-right">-->
+<!--                <div class="quality-item-heading">-->
+                  <%#= t  :equality %>
+<!--                </div>-->
+<!--                <div class="quality-item-text gray-text">-->
+                <%#= t  :equality_text %>
+<!--                </div>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--        <div class="quality-item">-->
+<!--          <div class="quality-item-left">-->
+<!--            <div class="quality-item-left-icon">-->
+<!--              <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-2-1.png" alt="icon" class="icon-photo">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="quality-item-right">-->
+<!--            <div class="quality-item-heading">-->
+              <%#= t :security %>
+<!--            </div>-->
+<!--            <div class="quality-item-text gray-text">-->
+            <%#= t :security_text %>
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="quality-item">-->
+<!--          <div class="quality-item-left">-->
+<!--            <div class="quality-item-left-icon">-->
+<!--              <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-3-1.png" alt="icon" class="icon-photo">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="quality-item-right">-->
+<!--            <div class="quality-item-heading">-->
+             <%#= t :quality %>
+<!--            </div>-->
+<!--            <div class="quality-item-text gray-text">-->
+            <%#= t :quality_text  %>
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="quality-item">-->
+<!--          <div class="quality-item-left">-->
+<!--            <div class="quality-item-left-icon">-->
+<!--              <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-4.png" alt="icon" class="icon-photo">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="quality-item-right">-->
+<!--            <div class="quality-item-heading">-->
+              <%#= t :innovation %>
+<!--            </div>-->
+<!--            <div class="quality-item-text gray-text">-->
+            <%#= t :innoation_text %>
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--      <div class="quality-right-side">-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
   <section class="counter-container <%= is_arabic? ? 'text-right-custom': '' %>">
     <div class="counter-back-image">
       <div class="counter-background-color-blue">
@@ -199,68 +226,81 @@
       </div>
     </div>
   </section>
-  <%= render partial: 'qualified' %>
-  <section class="reviews-container <%= is_arabic? ? 'text-right-custom': '' %>">
-    <div class="reviews-inner-container">
-
-       <%= render partial: 'form' %>
-
-      <div class="reviews-right-side reviews-sides">
-        <div class="reviews-heading-black heading-lg">
-          Customer Reviews
+  <section class="slider-four  <%= is_arabic? ? 'text-right-custom': '' %>">
+    <div class="slider-four-background-image-container">
+      <div class="slider-two-text-container">
+        <div class="health-card-heading">
+          <%= t  :timely_consultations %>
         </div>
-        <div class="reviews-review-container">
-          <div class="reviews-review-left">
-            <i class="fa fa-quote-right active fa-2x"></i>
-          </div>
-          <div class="reviews-review-right">
-            <div class="reviews-review-right-top gray-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Aliquam commodi consequatur deleniti distinctio, enim, eveniet perferendis porro quasi quo
-              reprehenderit repudiandae sed sequi unde voluptatibus.
-            </div>
-            <div class="reviews-review-right-bottom">
-              <div class="reviews-review-right-photo">
-                <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/test-1.png" alt="photo-icon" class="profile-image">
-              </div>
-              <div>
-              <div class="reviews-review-reviewer-name heading-md">
-                Mario Hughes
-              </div>
-              <div class="reviews-review-reviewer-position">
-                PEDIATRIC CENTER
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="reviews-review-container">
-          <div class="reviews-review-left">
-            <i class="fa fa-quote-right fa-2x active"></i>
-          </div>
-          <div class="reviews-review-right">
-            <div class="reviews-review-right-top gray-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Aliquam commodi consequatur deleniti distinctio, enim, eveniet perferendis porro quasi quo
-              reprehenderit repudiandae sed sequi unde voluptatibus.
-            </div>
-            <div class="reviews-review-right-bottom">
-              <div class="reviews-review-right-photo">
-                <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/test-1.png" alt="photo-icon" class="profile-image">
-              </div>
-              <div>
-              <div class="reviews-review-reviewer-name heading-md">
-                Mario Hughes
-              </div>
-              <div class="reviews-review-reviewer-position">
-                PEDIATRIC CENTER
-              </div>
-              </div>
-            </div>
-          </div>
+        <div class="health-card-text gray-text">
+          <%= t  :timely_cont_text %>
+
         </div>
       </div>
     </div>
   </section>
+
+  <section class="slider-five <%= is_arabic? ? 'text-right-custom': '' %>">
+    <div class="slider-five-background-image-container">
+      <div class="slider-two-text-container">
+        <div class="health-card-heading">
+          <%= t  :case_no %>
+        </div>
+        <div class="health-card-text gray-text">
+          <%= t  :case_text %>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slider-six <%= is_arabic? ? 'text-right-custom': '' %>">
+    <div class="slider-six-background-image-container">
+      <div class="slider-two-text-container">
+        <div class="health-card-heading">
+          <%= t  :trustful_workflow %>
+        </div>
+        <div class="health-card-text gray-text">
+          <%= t  :trustful_workflow_text%>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slider-seven <%= is_arabic? ? 'text-right-custom': '' %>">
+    <div class="slider-seven-background-image-container">
+      <div class="slider-two-text-container">
+        <div class="health-card-heading">
+          <%#= t  :trustful_workflow %>
+        </div>
+        <div class="health-card-text mb-1 gray-text">
+          <%= t  :step1%>.
+        </div>
+        <div class="health-card-text mb-1 gray-text">
+          <%= t  :step2%>.
+        </div>
+        <div class="health-card-text mb-1 gray-text">
+          <%= t  :step3%>.
+        </div>
+        <div class="btns btns-submit mt-4 text-center">
+          <%= t  :learnMore %>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slider-eight <%= is_arabic? ? 'text-right-custom': '' %>">
+    <div class="slider-eight-background-image-container">
+      <div class="slider-two-text-container">
+        <div class="health-card-heading">
+          <%= t  :seeking %>
+        </div>
+        <div class="btns btns-submit mt-4 text-center">
+          <%= t  :startHere %>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 <!--<a href="<%#= new_booking_path%>"> Create booking</a>-->

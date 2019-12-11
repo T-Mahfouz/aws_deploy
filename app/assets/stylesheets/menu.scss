@@ -70,17 +70,25 @@
   border-right: 1px dashed #ccc;
   white-space: nowrap;
 }
-.logo-image{
+.logo-img{
+  height: 70px;
+
+
+
+}
+.header-img-color{
+  //background-color: #1C9FF0;
+  height: 100px;
+  width: 85px;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 70px;
   @media only screen and (min-width:1440px) {
-  left: initial;
+    left: initial;
   }
   @media only screen and (max-width: 1100px){
     left: 0;
   }
-
 }
 .logo-image-md{
   position: absolute;
