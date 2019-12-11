@@ -11,6 +11,88 @@
         </div>
       </div>
     </section>
+  <section class="quality-container mb-5 <%= is_arabic? ? 'text-right-custom': '' %>">
+    <div class="quality-background-container">
+      <div class="quality-left-side">
+        <div class="quality-item">
+          <div class="quality-item-left">
+            <div class="quality-item-left-icon">
+              <div class="quality-photo-container">
+              <%=image_tag 'Equality.png',class: 'quality-icon-photo' %>
+              </div>
+<!--              <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-1-1.png" alt="icon" class="icon-photo">-->
+            </div>
+          </div>
+          <div class="quality-item-right">
+            <div class="quality-item-heading">
+              <%= t  :equality %>
+            </div>
+            <div class="quality-item-text gray-text">
+              <%= t  :equality_text %>
+            </div>
+          </div>
+        </div>
+        <div class="quality-item">
+          <div class="quality-item-left">
+            <div class="quality-item-left-icon">
+              <div class="quality-photo-container">
+                <%=image_tag 'Security.png',class: 'quality-icon-photo' %>
+              </div>
+<!--              <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-2-1.png" alt="icon" class="icon-photo">-->
+            </div>
+          </div>
+          <div class="quality-item-right">
+            <div class="quality-item-heading">
+              <%= t :security %>
+            </div>
+            <div class="quality-item-text gray-text">
+              <%= t :security_text %>
+            </div>
+          </div>
+        </div>
+        <div class="quality-item">
+          <div class="quality-item-left">
+            <div class="quality-item-left-icon">
+              <div class="quality-photo-container">
+                <%=image_tag 'Quality.png',class: 'quality-icon-photo' %>
+              </div>
+<!--              <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-3-1.png" alt="icon" class="icon-photo">-->
+            </div>
+          </div>
+          <div class="quality-item-right">
+            <div class="quality-item-heading">
+              <%= t :quality %>
+            </div>
+            <div class="quality-item-text gray-text">
+              <%= t :quality_text  %>
+            </div>
+          </div>
+        </div>
+        <div class="quality-item">
+          <div class="quality-item-left">
+            <div class="quality-item-left-icon">
+              <div class="quality-photo-container">
+                <%=image_tag 'Innovation.png',class: 'quality-icon-photo' %>
+              </div>
+<!--              <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-4.png" alt="icon" class="icon-photo">-->
+            </div>
+          </div>
+          <div class="quality-item-right">
+            <div class="quality-item-heading">
+              <%= t :innovation %>
+            </div>
+            <div class="quality-item-text gray-text">
+              <%= t :innoation_text %>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="quality-right-side">
+
+      </div>
+    </div>
+  </section>
     <%= render partial: 'working_hours'%>
-    <%= render partial: 'qualified' %>
+    <%#= render partial: 'qualified' %>
 </main>

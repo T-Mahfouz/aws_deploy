@@ -43,7 +43,7 @@ en:
   orthopedics: "Orthopedics"
   gynecologists: 'Gynecologists'
   equality : "Equality"
-  elquality_text : "Humans are created equal; Healthcare is an equal right to all"
+  equality_text : "Humans are created equal; Healthcare is an equal right to all"
   security : "Security"
   security_text : "Patients' records are to be treated with the highest aspects of privacy"
   quality : 'Quality'
@@ -92,3 +92,19 @@ en:
   closed : 'Closed'
   Phone: 'Phone'
   special_request: 'Special Request'
+  second_opinion: "Second Opinions Save Lives"
+  slider_one: "PlusOne ensures a hassle-free medical journey powered by a case manager for every individual case."
+  slider_two: "PlusOne offers you and your beloved ones the access to world- renowned medical experts with few clicks."
+  slider_three: "PlusOne is the most efficient and reliable platform in the field of online medical consultancy in the Middle East and North Africa region"
+  vision: "Vision"
+  vision_text: "An Equal Share of High-Quality Healthcare for Every Human Being"
+  timely_cont_text: 'Once we get all related documents, PlusOne strives to acquire the Second Opinion within 7 working days, whether a written report or an accompanied virtual conference with the expert, the Second Opinion report is followed by 14 days window of further clarifications, if needed.'
+  case_no: 'Case SM3321'
+  case_text: "Not only did they provide me with an exceptional report that is powered by more than one consultant neurologists opinion, but our case manager, Dr.Ayat, was an awesome supporter in the follow up phase, where she insured that we fully understand the medical report and put it in action.  "
+  trustful_workflow_text: "It is our promise that you will not experience the feeling of anxiety again, and there are no surprises with PlusOne. We guarantee that you receive the medical report from your assigned expert in due time."
+  step1: "Step 1: Request a Second Opinion service"
+  step2: "Step 2: Choose an international expert"
+  step3: "Step 3: Get a second medical opinion "
+  learnMore: "Learn More"
+  seeking: "Are you seeking a medical Second Opinion?"
+  startHere: 'Start here'
