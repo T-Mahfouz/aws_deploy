@@ -117,77 +117,7 @@
       </div>
     </div>
   </section>
-  <%#= render partial: 'working_hours' %>
-<!--  <section class="quality-container <%#= is_arabic? ? 'text-right-custom': '' %>">-->
-<!--    <div class="quality-background-container">-->
-<!--      <div class="quality-left-side">-->
-<!--          <div class="quality-item">-->
-<!--            <div class="quality-item-left">-->
-<!--              <div class="quality-item-left-icon">-->
-<!--                <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-1-1.png" alt="icon" class="icon-photo">-->
-<!--              </div>-->
-<!--            </div>-->
-<!--              <div class="quality-item-right">-->
-<!--                <div class="quality-item-heading">-->
-                  <%#= t  :equality %>
-<!--                </div>-->
-<!--                <div class="quality-item-text gray-text">-->
-                <%#= t  :equality_text %>
-<!--                </div>-->
-<!--              </div>-->
-<!--          </div>-->
-<!--        <div class="quality-item">-->
-<!--          <div class="quality-item-left">-->
-<!--            <div class="quality-item-left-icon">-->
-<!--              <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-2-1.png" alt="icon" class="icon-photo">-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="quality-item-right">-->
-<!--            <div class="quality-item-heading">-->
-              <%#= t :security %>
-<!--            </div>-->
-<!--            <div class="quality-item-text gray-text">-->
-            <%#= t :security_text %>
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="quality-item">-->
-<!--          <div class="quality-item-left">-->
-<!--            <div class="quality-item-left-icon">-->
-<!--              <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-3-1.png" alt="icon" class="icon-photo">-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="quality-item-right">-->
-<!--            <div class="quality-item-heading">-->
-             <%#= t :quality %>
-<!--            </div>-->
-<!--            <div class="quality-item-text gray-text">-->
-            <%#= t :quality_text  %>
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="quality-item">-->
-<!--          <div class="quality-item-left">-->
-<!--            <div class="quality-item-left-icon">-->
-<!--              <img src="https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/icon-4.png" alt="icon" class="icon-photo">-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="quality-item-right">-->
-<!--            <div class="quality-item-heading">-->
-              <%#= t :innovation %>
-<!--            </div>-->
-<!--            <div class="quality-item-text gray-text">-->
-            <%#= t :innoation_text %>
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
 
-<!--      </div>-->
-<!--      <div class="quality-right-side">-->
-
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
   <section class="counter-container <%= is_arabic? ? 'text-right-custom': '' %>">
     <div class="counter-back-image">
       <div class="counter-background-color-blue">
@@ -280,25 +210,64 @@
   </section>
 
   <section class="slider-seven <%= is_arabic? ? 'text-right-custom': '' %>">
-    <div class="slider-seven-background-image-container">
-      <div class="slider-two-text-container">
-        <div class="health-card-heading">
-          <%#= t  :trustful_workflow %>
+    <div id="slideshow-2" class="sliders">
+      <div class="active-slide slide">
+        <%= image_tag "shutterstock_797358901.jpg", class:"image" %>
+        <div class="slider-data-text">
+          <div class="slider-heading-sm">
+            <%= t  :step1 %>
+          </div>
         </div>
-        <div class="health-card-text mb-1 gray-text">
-          <%= t  :step1%>.
+
+      </div>
+      <div class="slide">
+        <%= image_tag "shutterstock_1005896620.jpg", class:"image" %>
+        <div class="slider-data-text">
+          <div class="slider-heading-sm">
+            <%= t  :step2%>.
+          </div>
+
         </div>
-        <div class="health-card-text mb-1 gray-text">
-          <%= t  :step2%>.
+      </div>
+      <div class="slide">
+        <%= image_tag "shutterstock_1487997236.jpg", class:"image" %>
+        <div class="slider-data-text">
+          <div class="slider-heading-sm">
+            <%= t  :step3%>.
+          </div>
         </div>
-        <div class="health-card-text mb-1 gray-text">
-          <%= t  :step3%>.
-        </div>
-        <div class="btns btns-submit mt-4 text-center">
-          <%= t  :learnMore %>
+      </div>
+      <div class="slide">
+        <%= image_tag "shutterstock_1012561585.jpg", class:"image" %>
+        <div class="slider-data-text">
+          <div class="slider-heading-sm">
+            <div class="btns btns-submit mt-4 text-center">
+              <%= t  :learnMore %>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+<!--    <div class="slider-seven-background-image-container">-->
+<!--      <div class="slider-two-text-container">-->
+<!--        <div class="health-card-heading">-->
+          <%#= t  :trustful_workflow %>
+<!--        </div>-->
+<!--        <div class="health-card-text mb-1 gray-text">-->
+<!--          <%#= t  :step1%>.-->
+<!--        </div>-->
+<!--        <div class="health-card-text mb-1 gray-text">-->
+<!--          <%#= t  :step2%>.-->
+<!--        </div>-->
+<!--        <div class="health-card-text mb-1 gray-text">-->
+<!--          <%#= t  :step3%>.-->
+<!--        </div>-->
+<!--        <div class="btns btns-submit mt-4 text-center">-->
+          <%#= t  :learnMore %>
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
   </section>
 
   <section class="slider-eight <%= is_arabic? ? 'text-right-custom': '' %>">
