@@ -256,7 +256,7 @@
   &-back-image{
     background-image: url("https://bridge133.qodeinteractive.com/wp-content/uploads/2018/01/parallax-1.jpg");
     background-attachment: fixed;
-    height: 305px;
+    height: 340px;
     background-position: top;
     @media only screen and (max-width: 768px) {
       height: auto;
@@ -293,8 +293,6 @@
     &-image-container{
       height: 200px;
       width: 200px;
-      //margin-bottom: -50px;
-      //text-align: center;
       &-first{
         margin-bottom: -50px;
       }
@@ -331,7 +329,6 @@
   &-text{
     width: 67%;
     text-align: center;
-    margin: auto;
     color: #404549;
     font-family: 'Roboto',sans-serif;
     font-size: 18px;
@@ -340,8 +337,7 @@
     font-weight: 400;
     letter-spacing: 0px;
     text-transform: none;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin: 20px auto 40px;
     @media only screen and(max-width: 786px) {
       width: 100%;
     }
