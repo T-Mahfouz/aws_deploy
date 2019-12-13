@@ -1,5 +1,5 @@
 <header>
-  <div class="menu-bar u-d-flex u-align-item-center d-done-at-md u-justify-content-space-between">
+  <div class="menu-bar u-d-flex u-align-item-center d-done-at-md u-justify-content-space-between <%= is_arabic? ? 'text-right-custom': '' %>">
 
     <div class="menu-items-container u-d-flex u-justify-content-space-between u-flex-1">
       <div class="logo-container u-d-flex u-justify-content-center">
@@ -30,7 +30,7 @@
         </div>
 
         <div class="depricon-icon menu-item-icon">
-         <%=image_tag (is_arabic? ? 'egypt-flag-xs.png' : 'english-flag-small.png') ,class: 'menu-flag'%>
+         <%=image_tag (is_arabic? ? 'egypt-flag-xs.png' : 'united-states-of-america-flag-xs.png') ,class: 'menu-flag'%>
         </div>
         <div>
           <select class="language-controller language-change" id="language-change">
@@ -70,7 +70,7 @@
       </ul>
     </div>
     <div class="align-right">
-      <%=image_tag (is_arabic? ? 'egypt-flag-xs.png' : 'english-flag-small.png') ,class: 'menu-flag'%>
+      <%=image_tag (is_arabic? ? 'egypt-flag-xs.png' : 'united-states-of-america-flag-xs.png') ,class: 'menu-flag'%>
 
       <select class="language-controller language-change" id="language-change">
 

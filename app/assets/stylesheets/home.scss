@@ -147,6 +147,7 @@
     //text-align: right;
     margin: 15px 0;
     text-align: center;
+
   }
   &-blue-card{
     background-color: #00a0f0;
@@ -547,6 +548,9 @@
     padding: 30px;
     transform: translate(-50%,-50%);
     border-radius: 8px;
+    &  a:hover{
+      text-decoration: none;
+    }
     @media only screen and (max-width: 768px) {
       width: 100%;
       position: initial;
@@ -648,7 +652,7 @@
 .learn-more-button{
   position: absolute;
   left: 50%;
-  right: 50%;
+  top: 50%;
   transform: translate(-50%,-50%);
   width: 250px;
   & > div{

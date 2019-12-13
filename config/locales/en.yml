@@ -50,13 +50,13 @@ en:
   quality_text : 'When it comes to human health, only the best options are to be considered'
   innovation : "Innovation"
   innoation_text : " We endlessly evolve our processes and tools to be able to match our equality and quality values"
-  about_us : 'About us'
+  about_us : 'ABOUT US'
   about_us_text: "We do believe unreservedly in Equality In Healthcare,  and as what cannot be achieved completely is not to be missed completely, in our relentless search for such equality, we shall exert every second of effort to achieve the most we can for every patient in the regions we chose to serve"
-  home: "Home"
+  home: "HOME"
   treatment: "Treatment"
-  contact: "Contact"
+  contact: "CONTACT"
   useful_link: 'Useful Link'
-  faq: 'Faqs'
+  faq: 'FAQs'
   Q1: "How can I use PlusOne? "
   Q1Ans: 'PlusOne gives patients the ability to get a Second Opinion from world-renowned experts. You can also request to receive our services through your treating doctor or our Case Managers who are qualified physicians themselves.
 
@@ -73,7 +73,7 @@ en:
   Q4: "How much time does it take until I get the Second Opinion report from the consultant? "
   Q4Ans: "Assuming all relevant data, scans and reports were uploaded correctly and fully at the time of requesting the Second Opinion, the Second Opinion will be provided to the patient within 7 business days. "
   Q5: "Can I ask for clarifications or have follow-up questions?"
-  Q5Ans: "In case of further clarifications required from the Second Opinion providers, a window of 14 consecutive days are there to submit further questions."
+  Q5Ans: "In case of further clarifications required from the Second Opinion providers, a window of 15 consecutive days are there to submit further questions."
   Q6: "How much Does it cost? "
   Q6Ans: "This depends greatly on the consultant selected as well as the case complexity, our case managers can help you with such estimations, are you ready to request a consultation: click here."
   always_there: 'Always there to care.'
