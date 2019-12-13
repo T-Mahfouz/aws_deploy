@@ -36,6 +36,10 @@
           autoplaySpeed: 600,
           autoplay: true,
       });
+      $('.move-up').click(function () {
+
+          $("html, body").animate({scrollTop: 0}, 900);
+      })
 
 
       $('.language-change').change(function (e) {

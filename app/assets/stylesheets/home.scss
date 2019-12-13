@@ -622,6 +622,8 @@
 .slider-seven-background-image-container{
   background-image: image_url("TheSlider.png");
   background-size: cover;
+  height: 600px;
+  border-bottom: 1px solid #ccc;
 }
 .slider-eight{
   position: relative;
@@ -636,4 +638,23 @@
   height: 100%;
   width: 100%;
   position: relative;
+}
+.slider-seven-image{
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+
+}
+.learn-more-button{
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%,-50%);
+  width: 250px;
+  & > div{
+    width: 100%;
+  }
+}
+.slider-back-image-container-faq{
+  background-image: image_url('shutterstock_640220572.jpg');
 }
