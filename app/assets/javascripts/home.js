@@ -23,10 +23,7 @@ $(document).ready(function ()  {
         }
 
     });
-    $('.move-up').click(function () {
 
-        $("html, body").animate({scrollTop: 0}, 900);
-    })
     var getUrlParameter = function getUrlParameter(sParam) {
         var sPageURL = window.location.search.substring(1),
             sURLVariables = sPageURL.split('&'),
