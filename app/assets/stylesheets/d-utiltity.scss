@@ -13,15 +13,22 @@
 .u-flex-1{
   flex: 1;
 }
-.gray-text{
-  color: #828282;
+.white-text-md{
+  color: #fff;
   font-family: 'Roboto',sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 26px;
   font-style: normal;
   font-weight: 400;
-  //text-align: right;
-  //direction: rtl;
+
+}
+.gray-text{
+  color: #696767;
+  font-family: 'Roboto',sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 400;
 }
 .heading-lg{
   //direction: rtl;
@@ -48,4 +55,9 @@ heading-md{
 }
 .padding-top-75{
   padding-top: 75px;
+}
+.heading-white{
+  color: #fff !important;
+  font-weight: 600 !important;
+  font-size: 40px !important;
 }

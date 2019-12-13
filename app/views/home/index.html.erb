@@ -92,28 +92,32 @@
   </section>
   <section class="slider-three  <%= is_arabic? ? 'text-right-custom': '' %>">
     <div class="slider-three-background-image-container">
+      <div class="slider-background-layer">
       <div class="slider-two-text-container">
-        <div class="health-card-heading">
+        <div class="health-card-heading heading-white">
           <%= t  :vision %>
         </div>
-        <div class="health-card-text gray-text">
+        <div class="health-card-text white-text-md">
           <%= t  :vision_text %>
 
         </div>
+      </div>
       </div>
     </div>
   </section>
   <section class="slider-two  <%= is_arabic? ? 'text-right-custom': '' %>">
     <div class="slider-two-background-image-container">
+      <div class="slider-background-layer">
       <div class="slider-two-text-container">
-        <div class="health-card-heading">
+        <div class="health-card-heading heading-white">
           <%= t  :world_renowned_experts %>
         </div>
-        <div class="health-card-text gray-text">
+        <div class="health-card-text white-text-md">
           <%= t  :our_experts %>.
           <%= t  :case_manager %>
 
         </div>
+      </div>
       </div>
     </div>
   </section>
@@ -170,15 +174,17 @@
   </section>
   <section class="slider-four  <%= is_arabic? ? 'text-right-custom': '' %>">
     <div class="slider-four-background-image-container">
+      <div class="slider-background-layer">
       <div class="slider-two-text-container">
-        <div class="health-card-heading">
+        <div class="health-card-heading heading-white">
           <%= t  :timely_consultations %>
         </div>
-        <div class="health-card-text gray-text">
+        <div class="health-card-text white-text-md">
           <%= t  :timely_cont_text %>
 
         </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -197,60 +203,62 @@
   </section>
   <section class="slider-six <%= is_arabic? ? 'text-right-custom': '' %>">
     <div class="slider-six-background-image-container">
+      <div class="slider-background-layer">
       <div class="slider-two-text-container">
-        <div class="health-card-heading">
+        <div class="health-card-heading heading-white">
           <%= t  :trustful_workflow %>
         </div>
-        <div class="health-card-text gray-text">
+        <div class="health-card-text white-text-md">
           <%= t  :trustful_workflow_text%>
 
         </div>
+      </div>
       </div>
     </div>
   </section>
 
   <section class="slider-seven <%= is_arabic? ? 'text-right-custom': '' %>" style="direction: ltr">
-    <div id="slideshow-2" class="sliders">
-      <div class="active-slide slide">
-        <%= image_tag "shutterstock_797358901.jpg", class:"image" %>
-        <div class="slider-data-text">
-          <div class="slider-heading-sm">
-            <%= t  :step1 %>
-          </div>
-        </div>
+<!--    <div id="slideshow-2" class="sliders">-->
+<!--      <div class="active-slide slide">-->
+        <%#= image_tag "shutterstock_797358901.jpg", class:"image" %>
+<!--        <div class="slider-data-text">-->
+<!--          <div class="slider-heading-sm">-->
+            <%#= t  :step1 %>
+<!--          </div>-->
+<!--        </div>-->
 
-      </div>
-      <div class="slide">
-        <%= image_tag "shutterstock_1005896620.jpg", class:"image" %>
-        <div class="slider-data-text">
-          <div class="slider-heading-sm">
-            <%= t  :step2%>.
-          </div>
+<!--      </div>-->
+<!--      <div class="slide">-->
+        <%#= image_tag "shutterstock_1005896620.jpg", class:"image" %>
+<!--        <div class="slider-data-text">-->
+<!--          <div class="slider-heading-sm">-->
+<!--            <%#= t  :step2%>.-->
+<!--          </div>-->
 
-        </div>
-      </div>
-      <div class="slide">
-        <%= image_tag "shutterstock_1487997236.jpg", class:"image" %>
-        <div class="slider-data-text">
-          <div class="slider-heading-sm">
-            <%= t  :step3%>.
-          </div>
-        </div>
-      </div>
-      <div class="slide">
-        <%= image_tag "shutterstock_1012561585.jpg", class:"image" %>
-        <div class="slider-data-text">
-          <div class="slider-heading-sm">
-            <div class="btns btns-submit mt-4 text-center">
-              <%= t  :learnMore %>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="slide">-->
+        <%#= image_tag "shutterstock_1487997236.jpg", class:"image" %>
+<!--        <div class="slider-data-text">-->
+<!--          <div class="slider-heading-sm">-->
+<!--            <%#= t  :step3%>.-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="slide">-->
+        <%#= image_tag "shutterstock_1012561585.jpg", class:"image" %>
+<!--        <div class="slider-data-text">-->
+<!--          <div class="slider-heading-sm">-->
+<!--            <div class="btns btns-submit mt-4 text-center">-->
+              <%#= t  :learnMore %>
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
 
-<!--    <div class="slider-seven-background-image-container">-->
-<!--      <div class="slider-two-text-container">-->
+    <div class="slider-seven-background-image-container">
+      <div class="slider-two-text-container">
 <!--        <div class="health-card-heading">-->
           <%#= t  :trustful_workflow %>
 <!--        </div>-->
@@ -263,11 +271,11 @@
 <!--        <div class="health-card-text mb-1 gray-text">-->
 <!--          <%#= t  :step3%>.-->
 <!--        </div>-->
-<!--        <div class="btns btns-submit mt-4 text-center">-->
-          <%#= t  :learnMore %>
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
+        <div class="btns btns-submit mt-4 text-center">
+          <%= t  :learnMore %>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="slider-eight <%= is_arabic? ? 'text-right-custom': '' %>">

@@ -529,7 +529,7 @@
     background-image: image_url('Slider3/1.jpg');
     background-size: cover;
     background-position: right;
-    padding-bottom: 45px;
+    //padding-bottom: 45px;
     position: relative;
     @media only screen and (max-width: 768px) {
 
@@ -538,8 +538,9 @@
       justify-content: center;
     }
   }
+
   &-text-container{
-    background-color: rgba(255,255,255,.7);
+    //background-color: rgba(255,255,255,.8);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -566,7 +567,7 @@
     background-image: image_url('Slider2/1.jpg');
     background-size: cover;
     background-position: right;
-    padding-bottom: 45px;
+    //padding-bottom: 45px;
     position: relative;
     @media only screen and (max-width: 768px) {
 
@@ -586,7 +587,7 @@
     background-image: image_url('Slider5/1.jpg');
     background-size: cover;
     background-position: right;
-    padding-bottom: 45px;
+    //padding-bottom: 45px;
     position: relative;
     @media only screen and (max-width: 768px) {
 
@@ -618,6 +619,10 @@
 .slider-six-background-image-container{
   background-image: image_url('Slider7/1.jpg');
 }
+.slider-seven-background-image-container{
+  background-image: image_url("TheSlider.png");
+  background-size: cover;
+}
 .slider-eight{
   position: relative;
   height: 300px;
@@ -625,4 +630,10 @@
 .slider-heading-sm{
   font-size: 40px;
   font-weight: 500;
+}
+.slider-background-layer{
+  background-color: rgba(0,0,0,.25);
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
