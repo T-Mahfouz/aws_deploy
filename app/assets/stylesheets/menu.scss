@@ -77,9 +77,10 @@
 
 }
 .header-img-color{
-  //background-color: #1C9FF0;
+  background-color: #1C9FF0;
   height: 100px;
-  width: 85px;
+  //width: 85px;
+  padding: 10px;
   position: absolute;
   top: 0;
   left: 70px;
@@ -90,14 +91,22 @@
     left: 0;
   }
 }
-.logo-image-md{
+.header-img-color-md{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 5;
+  top: 5px;
+  padding: 10px;
   z-index: 99;
   height: 75px;
-
+  background-color: #1C9FF0;
+  & a{
+    margin-right: 0;
+  }
+}
+.logo-image-md{
+  height: 100%;
+  //width: 100%;
 }
 .nav-bar-mobile{
   min-height: 85px;
