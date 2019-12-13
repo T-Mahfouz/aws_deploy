@@ -73,7 +73,7 @@ en:
   Q4: "How much time does it take until I get the Second Opinion report from the consultant? "
   Q4Ans: "Assuming all relevant data, scans and reports were uploaded correctly and fully at the time of requesting the Second Opinion, the Second Opinion will be provided to the patient within 7 business days. "
   Q5: "Can I ask for clarifications or have follow-up questions?"
-  Q5Ans: "In case of further clarifications required from the Second Opinion providers, a window of 14 consecutive days are there to submit further questions."
+  Q5Ans: "In case of further clarifications required from the Second Opinion providers, a window of 15 consecutive days are there to submit further questions."
   Q6: "How much Does it cost? "
   Q6Ans: "This depends greatly on the consultant selected as well as the case complexity, our case managers can help you with such estimations, are you ready to request a consultation: click here."
   always_there: 'Always there to care.'
