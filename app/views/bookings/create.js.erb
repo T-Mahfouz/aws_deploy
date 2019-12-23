@@ -5,6 +5,10 @@ $(".notice").remove();
   $("#helpBlock").append("<div class='notice' style='color:red;'><%= escape_javascript( message.humanize)%></div>");
   <% end %>
 <%else %>
+  $(window.location.replace("<%= success_path %>"));
+
+
   $("#helpBlock").append("<div class='submitted' style='color:green;'> Booking request Submitted </div>");
    document.getElementById("new_booking").reset();
+
 <% end %>
