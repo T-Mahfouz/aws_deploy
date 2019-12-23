@@ -7,4 +7,10 @@ class Booking < ApplicationRecord
   validates :phone, presence: true
   validates :disease_type, presence: true
   validates :inquiry, presence: true
+
+
+  def send_confirmation_email
+    UserMailer.booking_confirmation(self).deliver_now
+  end
+
 end

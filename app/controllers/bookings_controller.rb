@@ -5,7 +5,9 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
+
     if @booking.save
+      @booking.send_confirmation_email
     end
   end
 
