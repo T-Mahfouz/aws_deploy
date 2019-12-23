@@ -74,7 +74,17 @@ Rails.application.configure do
   config.active_support.deprecation = :notify
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
+  config.action_mailer.default_url_options = {host: ENV['host']}
   config.log_formatter = ::Logger::Formatter.new
+  config.action_mailer.smtp_settings = {
+      address:              'smtp.gmail.com',
+      port:                 587,
+      domain:               'gmail.com',
+      user_name:            'realstoresty@gmail.com',
+      password:             'Raza654321',
+      authentication:       :plain,
+      enable_starttls_auto: true
+  }
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
