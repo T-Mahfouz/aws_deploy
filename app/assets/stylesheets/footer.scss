@@ -37,6 +37,7 @@
       text-transform: none;
       color: #fff;
       font-style: normal;
+      text-align: center;
     }
     &-text{
       font-family: "Roboto",sans-serif;
@@ -47,6 +48,7 @@
       text-transform: none;
       font-style: normal;
       margin-bottom: 25px;
+      text-align: center;
     }
     &-link{
       //text-transform: uppercase;
@@ -56,6 +58,8 @@
       font-family: "Roboto",Sans-Serif;
       cursor: pointer;
       color: #fff;
+      margin-left: 20px;
+      //text-align: center;
       &:hover{
         color: #00a0f0;
 

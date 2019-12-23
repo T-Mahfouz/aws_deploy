@@ -12,7 +12,7 @@
     box-shadow: 0 0 35px 5px #dceff8;
     width: 100%;
     margin: auto;
-    height: 660px;
+    height: 740px;
     justify-content: space-between;
     max-width: 1440px;
     transform: translateY(-20%);
@@ -64,6 +64,8 @@
     flex: 0 0 35%;
     margin-bottom: 15px;
     height: 100px;
+    min-height: 100px;
+    max-height: 100px;
   }
   &-detail{
     flex: 0 0 65%;
