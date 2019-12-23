@@ -24,6 +24,7 @@ $(document).ready(function() {
             $(".failed").removeClass("finish");
         }, 5000);
     });
+  
 });
 
 
