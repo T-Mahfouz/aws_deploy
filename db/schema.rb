@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_06_134504) do
+ActiveRecord::Schema.define(version: 2019_12_25_095142) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,7 +50,8 @@ ActiveRecord::Schema.define(version: 2019_12_06_134504) do
     t.string "inquiry"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["email"], name: "index_bookings_on_email", unique: true
+    t.string "country_name"
+    t.string "country_code"
   end
 
   create_table "complains", force: :cascade do |t|
