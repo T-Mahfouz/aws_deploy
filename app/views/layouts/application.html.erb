@@ -23,11 +23,11 @@
     <%= render partial: 'shared/footer'%>
   </div>
   <script>
-      var iti = $("#phone").intlTelInput({
-        formatOnInit: true,
-        separateDialCode: true,
-        nationalMode: true,
-      });
+//      var iti = $("#phone").intlTelInput({
+//        formatOnInit: true,
+//        separateDialCode: true,
+//        nationalMode: true,
+//      });
       $("#slideshow").slick({
           infinite: true,
           autoplaySpeed: 4000,
@@ -50,10 +50,10 @@
           window.location.replace(`${window.location.pathname}?locale=${e.target.value}`);
       })
       
-       $("#new_booking").on('submit', function(){
-         var phone_number = $("#phone").intlTelInput("getNumber")
-         $("#phone")[0].value = phone_number
-      });
+//       $("#new_booking").on('submit', function(){
+//         var phone_number = $("#phone").intlTelInput("getNumber")
+//         $("#phone")[0].value = phone_number
+//      });
       var getUrlParameter = function getUrlParameter(sParam) {
           var sPageURL = window.location.search.substring(1),
               sURLVariables = sPageURL.split('&'),
