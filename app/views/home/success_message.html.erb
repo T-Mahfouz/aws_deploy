@@ -1,6 +1,5 @@
-<main class="padding-top-75">
-  <p class="Seccess-text text-center h-50 d-flex justify-content-center align-items-center heading-lg">
-    Request Submitted. We will get back to you ASAP
-
+<main class="padding-top-75  <%= is_arabic? ? 'text-right-custom': '' %>">
+  <p class="Seccess-text text-center h-50 d-flex justify-content-center align-items-center slider-text">
+  <%= t :sucess_text  %>.
   </p>
 </main>

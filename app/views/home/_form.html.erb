@@ -27,10 +27,21 @@
 
         </div>
       </div>
-      <div class="appointment-form-row appointment-form-phone">
+      <div class="form-group">
         <%#= f.telephone_field :phone, id: 'phone', class: 'home-form-input', placeholder: "#{t :Phone}" %>
-        <%= f.select :phone, ['Egypt: 0020', 'Saudi Arabia: 00966', 'Kuwait: 00965', 'United Arab Emirates: 00971', 'Qatar: 00974', 'Bahrain: 00973', 'Oman: 00968', 'Jordan: 00962', 'Yemen: 00967', 'Iraq: 00964', 'Lebanon: 00961', 'Algeria: 00213', 'Tunisia: 00216', 'Libya: 00218', 'Morocco: 00212' ], {prompt: 'Choose country code'}, { class: 'home-form-input', } %>
-            </div>
+        <div class="appointment-form-row">
+          <div class="appointment-form-row-left">
+
+          <%= f.select :country_name, ['Egypt', 'Saudi Arabia', 'Kuwait', 'United Arab Emirates', 'Qatar', 'Bahrain', 'Oman', 'Jordan', 'Yemen', 'Iraq', 'Lebanon', 'Algeria', 'Tunisia', 'Libya', 'Morocco' ],{},{class:'home-form-input'} %>
+          </div>
+          <div class="appointment-form-row-right">
+        <%= f.text_field :country_code, id: "country-code", value: "0020",disabled: true ,class:"home-form-input"%>
+          </div>
+        </div>
+          <%= f.text_field :phone ,{required:true,class:'home-form-input'}%>
+
+
+      </div>
       <div class="appointment-form-row">
         <div class="appointment-form-row-text-area">
           <%= f.text_area :inquiry, class: "home-form-input home-form-textarea", placeholder: "#{t :special_request }..." %>
