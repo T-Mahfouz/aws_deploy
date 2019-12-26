@@ -1,5 +1,49 @@
-<h1>Booking Request</h1>
+<div style="padding-left:200px; padding-right:200px;">
 
-<h3>
-  Hi Admin! You have recieved new booking request from <%= @booking.first_name %> <span style="margin-left: 3px;"> </span> <%= @booking.second_name %>
-</h3>
+
+<div style="border:0; font:inherit; font-size:100%; margin:0; padding:0; vertical-align:baseline; line-height:1; color:#546b81; font-family:Colfax, Helvetica, Arial, sans-serif; font-style:normal; font-weight:400" valign="baseline">
+  <h2 style="border:0; font:inherit; font-size:20px; margin:0; padding:0; vertical-align:baseline; color:#294661; font-weight:600; letter-spacing:-0.5px; line-height:30px; margin-bottom:18px" valign="baseline">Hello Admin!</h2>
+  <p style="border:0; font:inherit; font-size:15px; margin:0; padding:0; vertical-align:baseline; line-height:27px; margin-bottom:20px" valign="baseline"><%= @booking.first_name.humanize %> <span style="margin-right:2px;"></span> <%= @booking.second_name.humanize %>just sent you an Inquiry.</p>
+
+  <div style="border:0; font:inherit; font-size:100%; margin:0; padding:0; vertical-align:baseline;" valign="baseline">
+    <table class="table-wrap" style="border:0; font:inherit; font-size:100%; margin:0; padding:0; vertical-align:baseline; border-collapse:collapse; border-spacing:0; margin-bottom:20px; max-width:none; width:100%" valign="baseline" width="100%">
+      <thead style="border:0; font:inherit; font-size:100%; margin:0; padding:0; vertical-align:baseline" valign="baseline">
+      <tr style="border:1px solid #e9ecef; font:inherit; font-size:13px; margin:0; padding:0; vertical-align:baseline; border-bottom:0; line-height:20px; transition:background-color 0.3s; border-color:transparent" valign="baseline">
+        <th class="sort" style="border:0; font:inherit; font-size:12px; margin:0; padding:20px 12px; vertical-align:middle; color:#7f90a0; font-weight:600; line-height:15px; text-align:left; letter-spacing:1px; text-transform:uppercase; cursor:pointer" valign="middle" align="left">Inquiry Details</th>
+        <th class="sort" style="border:0; font:inherit; font-size:12px; margin:0; padding:20px 12px; vertical-align:middle; color:#7f90a0; font-weight:600; line-height:15px; text-align:left; letter-spacing:1px; text-transform:uppercase; cursor:pointer" valign="middle" align="left"></th>
+      </tr>
+      </thead>
+      <tbody style="border:0; font:inherit; font-size:100%; margin:0; padding:0; vertical-align:baseline" valign="baseline">
+      <tr style="border:1px solid #e9ecef; font:inherit; font-size:13px; margin:0; padding:0; vertical-align:baseline; border-bottom:0; line-height:20px; transition:background-color 0.3s" valign="baseline">
+        <td class="stats" style="border:0; font:inherit; font-size:100%; margin:0; padding:20px 12px; vertical-align:middle; position:relative; width:130px" valign="middle" width="130">First Name</td>
+        <td class="stats" style="border:0; font:inherit; font-size:100%; margin:0; padding:20px 12px; vertical-align:middle; position:relative; width:130px" valign="middle" width="130"><%= @booking.first_name.humanize %></td>
+      </tr>
+      <tr style="border:1px solid #e9ecef; font:inherit; font-size:13px; margin:0; padding:0; vertical-align:baseline; border-bottom:0; line-height:20px; transition:background-color 0.3s" valign="baseline">
+        <td class="stats" style="border:0; font:inherit; font-size:100%; margin:0; padding:20px 12px; vertical-align:middle; position:relative; width:130px" valign="middle" width="130">Second Name</td>
+        <td class="stats" style="border:0; font:inherit; font-size:100%; margin:0; padding:20px 12px; vertical-align:middle; position:relative; width:130px" valign="middle" width="130"><%= @booking.second_name.humanize %></td>
+      </tr>
+      <tr style="border:1px solid #e9ecef; font:inherit; font-size:13px; margin:0; padding:0; vertical-align:baseline; border-bottom:0; line-height:20px; transition:background-color 0.3s" valign="baseline">
+        <td class="stats" style="border:0; font:inherit; font-size:100%; margin:0; padding:20px 12px; vertical-align:middle; position:relative; width:130px" valign="middle" width="130">Email</td>
+        <td class="stats" style="border:0; font:inherit; font-size:100%; margin:0; padding:20px 12px; vertical-align:middle; position:relative; width:130px" valign="middle" width="130"><%= @booking.email.downcase %></td>
+      </tr>
+      <tr style="border:1px solid #e9ecef; font:inherit; font-size:13px; margin:0; padding:0; vertical-align:baseline; border-bottom:0; line-height:20px; transition:background-color 0.3s" valign="baseline">
+        <td class="stats" style="border:0; font:inherit; font-size:100%; margin:0; padding:20px 12px; vertical-align:middle; position:relative; width:130px" valign="middle" width="130">Phone</td>
+        <td class="stats" style="border:0; font:inherit; font-size:100%; margin:0; padding:20px 12px; vertical-align:middle; position:relative; width:130px" valign="middle" width="130"><%= @booking.phone %></td>
+      </tr>
+      <tr style="border:1px solid #e9ecef; font:inherit; font-size:13px; margin:0; padding:0; vertical-align:baseline; border-bottom:0; line-height:20px; transition:background-color 0.3s" valign="baseline">
+        <td class="stats" style="border:0; font:inherit; font-size:100%; margin:0; padding:20px 12px; vertical-align:middle; position:relative; width:130px" valign="middle" width="130">Disease Type</td>
+        <td class="stats" style="border:0; font:inherit; font-size:100%; margin:0; padding:20px 12px; vertical-align:middle; position:relative; width:130px" valign="middle" width="130"><%= @booking.disease_type%></td>
+      </tr>
+      <tr style="border:1px solid #e9ecef; font:inherit; font-size:13px; margin:0; padding:0; vertical-align:baseline; border-bottom:0; line-height:20px; transition:background-color 0.3s" valign="baseline">
+        <td class="stats" style="border:0; font:inherit; font-size:100%; margin:0; padding:20px 12px; vertical-align:middle; position:relative; width:130px" valign="middle" width="130">Inquiry</td>
+        <td class="stats" style="border:0; font:inherit; font-size:100%; margin:0; padding:20px 12px; vertical-align:middle; position:relative; width:130px" valign="middle" width="130"><%= @booking.inquiry%></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <br>
+
+
+</div>
+</div>

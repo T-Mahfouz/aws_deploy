@@ -8,7 +8,7 @@ class UserMailer < ApplicationMailer
   def booking_confirmation(booking)
 
       @booking = booking
-      mail to: "admin@example.com", subject: "Booking Request"
+      mail to: "admin@example.com", subject: "Inquiry Request"
 
 
   end

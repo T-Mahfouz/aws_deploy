@@ -1,5 +1,9 @@
 <main class="padding-top-75  <%= is_arabic? ? 'text-right-custom': '' %>">
-  <p class="Seccess-text text-center h-50 d-flex justify-content-center align-items-center slider-text">
+
+  <p class="Seccess-text text-center h-50   d-flex justify-content-center align-items-center slider-text">
   <%= t :sucess_text  %>.
   </p>
+  <div class="text-center p-4">
+    <%= link_to "#{t :home_back}", root_path, class: "btns pl-4 pr-4 pt-3 pb-3 btns-submit" %>
+  </div>
 </main>
