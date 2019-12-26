@@ -2,8 +2,9 @@
 //= require jquery_ujs
 //= require popper
 //= require bootstrap
-//= require contact
 //= require intlTelInput
 //= require libphonenumber/utils
 //= require jquery.slick
 //= require home
+//= require contact
+
