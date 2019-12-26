@@ -53,7 +53,7 @@
         <div class="ajax-button appointment-form-button">
           <div class="fa fa-check fa-customize done"></div>
           <div class="fa fa-close fa-customize failed" style="color:red !important;"></div>
-          <%= f.submit "Send Inquiry", class: "btn btn-primary submit", id: "submit" %>
+            <%= f.submit "Send Inquiry", class: "btn btn-primary btns btns-submit submit", id: "submit" %>
         </div>
     <% end %>
   </div>
@@ -69,6 +69,7 @@
     // })
     $('#new_booking').on('ajax:success', function (e, data, status, xhr) {
       $(".submit").addClass("loading");
+        $(".submit").removeClass("btns btns-submit");
       setTimeout(function () {
         $(".submit").addClass("hide-loading");
         // For failed icon just replace ".done" with ".failed"
@@ -82,7 +83,9 @@
       setTimeout(function () {
         $(".submit").removeClass("loading");
         $(".submit").removeClass("hide-loading");
-        $(".done").removeClass("finish");
+        $(".submit").addClass("btns btns-submit");
+
+          $(".done").removeClass("finish");
         $(".failed").removeClass("finish");
       }, 5000);
 
