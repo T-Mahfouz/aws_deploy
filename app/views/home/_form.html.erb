@@ -3,7 +3,7 @@
     <div class="appointment-form-top-text">
       <%= t :always_there %>
     </div>
-    <div class="appointment-form-heading">
+    <div class="appointment-form-heading" style="direction: ltr">
       <%= t :ask_plus_one_expert %>
     </div>
     <div id="helpBlock" class="help-block"></div>
@@ -53,7 +53,7 @@
         <div class="ajax-button appointment-form-button">
           <div class="fa fa-check fa-customize done"></div>
           <div class="fa fa-close fa-customize failed" style="color:red !important;"></div>
-            <%= f.submit "Send Inquiry", class: "btn btn-primary btns btns-submit submit", id: "submit" %>
+            <%= f.submit "Send Inquiry", class: "btn btns btns-submit submit", id: "submit" %>
         </div>
     <% end %>
   </div>
@@ -92,7 +92,7 @@
 
 
     });
-    $('#booking_country_name').on("click", function () {
+    $('#booking_country_name').on("change", function () {
       var name = $('#booking_country_name').val();
       if (name == 'Egypt'){
         $('#country-code').val('0020');

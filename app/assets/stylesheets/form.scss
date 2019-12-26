@@ -94,6 +94,10 @@
   &-submit{
     background-color: #00a0f0;
     border: 1px solid #00a0f0;
+    &:hover{
+      background-color: #00a0f0;
+      border: 1px solid #00a0f0;
+    }
   }
   &:hover{
     text-decoration: none;
