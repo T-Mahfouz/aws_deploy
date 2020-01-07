@@ -48,8 +48,6 @@ ActiveAdmin.register PrivacyPolicy do
     row :arabic_title
     row :english_text
     row :arabic_text
-    row :created_at
-    row :updated_at
     end
   end
 
