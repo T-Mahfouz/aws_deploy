@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   root to: "home#index"
 
   resources :bookings
+  resource :privacy_policy
+  resource :terms_and_condition
 
   get 'about', to: "home#about"
   get 'contact', to: "home#contact"
