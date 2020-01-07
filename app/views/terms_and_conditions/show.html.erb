@@ -1,12 +1,38 @@
-<% if is_arabic? %>
-    <div style="margin-top:500px;">
-      <%= @terms.arabic_title %>
-      <%= @terms.arabic_text %>
-    </div>
-    <%else%>
+<div class="padding-top-75">
+  <section class="slider">
+    <div class="slider-back-image-container slider-back-image-container-faq">
+      <div class="slider-text-container">
+        <div class="slider-heading heading-lg p-4">
+        </div>
+        <div class="slider-text white-text">
 
-<div style="margin-top:500px;">
-  <%= @terms.english_title %>
-  <%= @terms.english_text %>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header card-header-custom" id="headingOne">
+          <% if is_arabic? %>
+              <div style="padding:20px;">
+                <h1><%= @terms.arabic_title %></h1>
+                <p> <%= @terms.arabic_text %></p>
+              </div>
+          <% else %>
+              <div style="padding:20px;">
+                <h1><%= @terms.english_title %></h1>
+                <p><%= @terms.english_text %></p>
+              </div>
+
+
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<%end%>
+<div class="padding-top-75">
+</div>
+
+

@@ -1,11 +1,38 @@
-<% if is_arabic? %>
-    <div style="margin-top:500px;">
-      <%= @policy.arabic_title %>
-      <%= @policy.arabic_text %>
+<div class="padding-top-75">
+  <section class="slider">
+    <div class="slider-back-image-container slider-back-image-container-faq">
+      <div class="slider-text-container">
+        <div class="slider-heading heading-lg p-4">
+        </div>
+        <div class="slider-text white-text">
+
+        </div>
+      </div>
     </div>
-<%else%>
-    <div style="margin-top:500px;">
-      <%= @policy.english_title %>
-      <%= @policy.english_text %>
+  </section>
+  <div class="container">
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header card-header-custom" id="headingOne">
+          <% if is_arabic? %>
+              <div style="padding:20px;">
+                <h1><%= @policy.arabic_title %></h1>
+                <p> <%= @policy.arabic_text %></p>
+              </div>
+          <% else %>
+              <div style="padding:20px;">
+                <h1><%= @policy.english_title %></h1>
+                <p><%= @policy.english_text %></p>
+              </div>
+
+
+          <% end %>
+        </div>
+      </div>
     </div>
-<%end%>
+  </div>
+</div>
+<div class="padding-top-75">
+</div>
+
+
