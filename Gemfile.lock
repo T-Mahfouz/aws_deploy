@@ -48,6 +48,8 @@ GEM
       ransack (~> 2.1, >= 2.1.1)
       sassc-rails (~> 2.1)
       sprockets (>= 3.0, < 4.1)
+    activeadmin_quill_editor (0.2.0)
+      activeadmin (>= 1.0)
     activejob (6.0.2.1)
       activesupport (= 6.0.2.1)
       globalid (>= 0.3.6)
@@ -259,7 +261,7 @@ GEM
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
-    tzinfo (1.2.5)
+    tzinfo (1.2.6)
       thread_safe (~> 0.1)
     warden (1.2.8)
       rack (>= 2.0.6)
@@ -288,6 +290,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin
+  activeadmin_quill_editor
   animate.css-rails
   bootsnap (>= 1.4.2)
   bootstrap (~> 4.4.1)

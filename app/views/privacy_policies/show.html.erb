@@ -1,0 +1,11 @@
+<% if is_arabic? %>
+    <div style="margin-top:500px;">
+      <%= @policy.arabic_title %>
+      <%= @policy.arabic_text %>
+    </div>
+<%else%>
+    <div style="margin-top:500px;">
+      <%= @policy.english_title %>
+      <%= @policy.english_text %>
+    </div>
+<%end%>

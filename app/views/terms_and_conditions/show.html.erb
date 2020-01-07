@@ -1,0 +1,12 @@
+<% if is_arabic? %>
+    <div style="margin-top:500px;">
+      <%= @terms.arabic_title %>
+      <%= @terms.arabic_text %>
+    </div>
+    <%else%>
+
+<div style="margin-top:500px;">
+  <%= @terms.english_title %>
+  <%= @terms.english_text %>
+</div>
+<%end%>
