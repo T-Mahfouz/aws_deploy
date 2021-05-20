@@ -1,0 +1,43 @@
+=== puma startup: 2020-01-08 14:15:31 +0000 ===
+=== puma startup: 2020-01-08 14:16:27 +0000 ===
+=== puma startup: 2020-01-08 14:17:57 +0000 ===
+=== puma startup: 2020-01-08 14:19:18 +0000 ===
+=== puma startup: 2020-01-08 14:21:45 +0000 ===
+=== puma startup: 2020-01-08 14:28:24 +0000 ===
+=== puma startup: 2020-01-08 14:28:24 +0000 ===
+=== puma startup: 2020-01-08 14:31:34 +0000 ===
+2020-01-17 05:43:31 +0000: Rack app error handling request { RPC_IN_DATA /rpc/rpcproxy.dll }
+#<ActionController::UnknownHttpMethod: RPC_IN_DATA, accepted HTTP methods are OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT, PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK, VERSION-CONTROL, REPORT, CHECKOUT, CHECKIN, UNCHECKOUT, MKWORKSPACE, UPDATE, LABEL, MERGE, BASELINE-CONTROL, MKACTIVITY, ORDERPATCH, ACL, SEARCH, MKCALENDAR, and PATCH>
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/actionpack-6.0.2.1/lib/action_dispatch/http/request.rb:423:in `check_method'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/actionpack-6.0.2.1/lib/action_dispatch/http/request.rb:135:in `request_method'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:51:in `started_request_message'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:37:in `block in call_app'
+/home/ubuntu/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/logger.rb:465:in `add'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/activesupport-6.0.2.1/lib/active_support/logger_thread_safe_level.rb:53:in `add'
+/home/ubuntu/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/logger.rb:525:in `info'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:37:in `call_app'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `block in call'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `block in tagged'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:28:in `tagged'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `tagged'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `call'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/rack-2.0.8/lib/rack/method_override.rb:22:in `call'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/rack-2.0.8/lib/rack/runtime.rb:22:in `call'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/activesupport-6.0.2.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/rack-2.0.8/lib/rack/sendfile.rb:111:in `call'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/railties-6.0.2.1/lib/rails/engine.rb:526:in `call'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/puma-4.3.1/lib/puma/configuration.rb:228:in `call'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/puma-4.3.1/lib/puma/server.rb:681:in `handle_request'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/puma-4.3.1/lib/puma/server.rb:472:in `process_client'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/puma-4.3.1/lib/puma/server.rb:328:in `block in run'
+/home/ubuntu/.rvm/gems/ruby-2.6.0/gems/puma-4.3.1/lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+=== puma startup: 2020-02-21 15:26:17 +0000 ===
+2021-03-15 07:40:55 +0000: HTTP parse error, malformed request (127.0.0.1/console/images/%252e%252e%252fconsole.portal): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+2021-03-15 07:40:55 +0000: HTTP parse error, malformed request (127.0.0.1/console/images/%252E%252E%252Fconsole.portal): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+=== puma startup: 2021-05-09 02:22:05 +0000 ===

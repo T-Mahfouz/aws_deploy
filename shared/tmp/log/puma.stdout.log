@@ -1,0 +1,38 @@
+=== puma startup: 2020-01-08 14:15:31 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-01-08 14:15:43 +0000 ===
+- Goodbye!
+=== puma startup: 2020-01-08 14:16:27 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-01-08 14:17:15 +0000 ===
+- Goodbye!
+=== puma startup: 2020-01-08 14:17:57 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-01-08 14:18:25 +0000 ===
+- Goodbye!
+=== puma startup: 2020-01-08 14:19:18 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-01-08 14:20:05 +0000 ===
+- Goodbye!
+=== puma startup: 2020-01-08 14:21:45 +0000 ===
+=== puma startup: 2020-01-08 14:28:24 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-01-08 14:28:24 +0000 ===
+- Goodbye!
+=== puma startup: 2020-01-08 14:28:24 +0000 ===
+=== puma startup: 2020-01-08 14:31:34 +0000 ===
+* Listening on unix:///var/www/deploy/shared/tmp/sockets/puma.sock
+* Starting control server on unix:///tmp/puma-status-1578493894749-1717
+* Restarting...
+Puma starting in single mode...
+* Version 4.3.1 (ruby 2.6.0-p0), codename: Mysterious Traveller
+* Min threads: 5, max threads: 5
+* Environment: production
+* Daemonizing...
+=== puma startup: 2020-02-21 15:26:17 +0000 ===
+* Inherited unix:///var/www/deploy/shared/tmp/sockets/puma.sock
+* Starting control server on unix:///tmp/puma-status-1582298777065-1719
+=== puma startup: 2021-05-09 02:22:05 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2021-05-09 02:22:06 +0000 ===
+- Goodbye!
